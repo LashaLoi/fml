@@ -14,13 +14,13 @@ const inter = Inter({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div className={inter.className}>
       <Head />
       <Header />
       <div className="pt-[80px]">
         <Component {...pageProps} />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
