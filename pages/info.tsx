@@ -5,7 +5,7 @@ export default function Info() {
   return (
     <section className="py-24 sm:mb-[140px] mb-0">
       <div className="container px-4 mx-auto">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="mx-auto text-center">
           <motion.span
             initial={{
               opacity: 0,
