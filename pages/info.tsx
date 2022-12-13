@@ -79,7 +79,7 @@ export default function Info() {
             многое!
           </motion.p>
           <Link
-            className="group relative inline-block h-12 w-full xs:w-60 bg-blueGray-900 rounded-md"
+            className="group relative inline-block h-12 xs:w-60 bg-blueGray-900 rounded-md w-[300px]"
             href="/register"
           >
             <motion.div
