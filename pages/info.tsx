@@ -73,7 +73,7 @@ export default function Info() {
               delay: 0.5,
               duration: 0.3,
             }}
-            className="text-lg font-bold mb-12 max-w-[600px] min-w-[300px]"
+            className="text-lg font-bold mb-12 max-w-[600px] min-w-[300px] mx-auto"
           >
             Надеемся что вы проведете прекрасно время и получите для себя
             многое!
