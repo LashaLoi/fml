@@ -173,6 +173,13 @@ export default function RegisterPage() {
           register={register}
           type="email"
         />
+        <Textarea
+          label="ЕСТЬ ВОПРОСЫ?"
+          name="q"
+          register={register}
+          required
+          placeholder="..."
+        />
         <div className="flex flex-wrap items-center justify-between -mx-4 mb-8 pb-6  border-opacity-20">
           <div className="w-full sm:w-auto px-4 mb-6 sm:mb-0">
             <h4 className="text-2xl font-bold tracking-wide text-white mb-1">
