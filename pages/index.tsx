@@ -7,10 +7,12 @@ import Map from "../components/Map";
 import FAQ from "../components/FAQ";
 import Why from "../components/Why";
 import About from "../components/About";
+import Banner from "../components/Banner";
 
 export default function IndexPage() {
   return (
     <>
+      <Banner />
       <Register />
       <Goals />
       <Gallery />
