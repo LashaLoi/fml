@@ -7,7 +7,7 @@ export default function Header() {
         href="/"
         className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
       >
-        <span className="ml-3 text-xl">FML</span>
+        <span className="ml-3 text-xl font-extrabold">ФМЛ</span>
       </Link>
       <ul className="font-montserrat items-center flex">
         <li className="growing-underline mx-3">

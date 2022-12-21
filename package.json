@@ -15,11 +15,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.40.0",
-    "react-hot-toast": "^2.4.0"
+    "react-hot-toast": "^2.4.0",
+    "react-input-mask": "^2.0.4"
   },
   "devDependencies": {
     "@supabase/supabase-js": "^2.1.3",
     "@types/bcrypt": "^5.0.0",
+    "@types/react-input-mask": "^3.0.2",
     "autoprefixer": "^10.4.4",
     "eslint": "8.11.0",
     "eslint-config-next": "^13.0.5",

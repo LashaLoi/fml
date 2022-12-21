@@ -71,11 +71,12 @@ export default function FAQ() {
               </div>
             </div>
           </div>
-          <p className="text-gray-600 text-center font-medium ">
-            <span>Все еще есть вопросы?</span>
+          <p className="text-gray-600 text-center font-medium">
+            <span className="mr-1">Все еще есть вопросы?</span>
+            Напиши нам
             <a className="font-semibold text-indigo-600 hover:text-indigo-700 ml-1">
-              Напиши нам
-            </a>
+              - fml@ywam.by
+            </a>{" "}
           </p>
         </div>
       </div>

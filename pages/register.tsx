@@ -1,5 +1,6 @@
 import Select from "components/Select";
 import Textarea from "components/Textarea";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -64,6 +65,24 @@ export default function RegisterPage() {
     <div className="p-8 bg-gray-900">
       {open && <Notification onClise={() => setOpen(false)} />}
       <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="flex flex-wrap items-center -mx-4 pb-8 mb-8 border-b border-gray-400 border-opacity-20">
+          <div className="w-full sm:w-1/3 px-4 mb-4 sm:mb-0">
+            <Link href="/">
+              <span className="text-sm font-medium text-gray-100 fill-slate-100 flex ">
+                <svg
+                  height={20}
+                  width={20}
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  className="mr-2"
+                >
+                  <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                </svg>
+                Назад
+              </span>
+            </Link>
+          </div>
+        </div>
         <div className="flex flex-wrap items-center -mx-4 pb-8 mb-8 border-b border-gray-400 border-opacity-20">
           <div className="w-full sm:w-1/3 px-4 mb-4 sm:mb-0">
             <span className="text-sm font-medium text-gray-100">
@@ -144,11 +163,11 @@ export default function RegisterPage() {
         />
         <Input
           label="ДАТА РОЖДЕНИЯ"
+          mask="99/99/9999"
           placeholder="14/10/1998"
           name="age"
           required
           register={register}
-          type="date"
         />
         <Textarea
           label="ДЕТИ, КОТОРЫЕ ПОЕДУ С ВАМИ НА ФМЛ (ФИО, ВОЗРАСТ)"
@@ -160,6 +179,7 @@ export default function RegisterPage() {
         <Input
           label="ТЕЛЕФОН"
           placeholder="+375 (29/33) 123 45 67"
+          mask="+375 (99) 999 99 99"
           name="phone"
           required
           register={register}

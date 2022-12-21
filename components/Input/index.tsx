@@ -1,9 +1,11 @@
 import { InputHTMLAttributes } from "react";
 import { UseFormRegister } from "react-hook-form";
+import InputMask from "react-input-mask";
 
 type InputProps = {
   label: string;
   register: UseFormRegister<any>;
+  mask?: string;
 } & InputHTMLAttributes<HTMLInputElement>;
 
 export default function Input({
@@ -13,6 +15,7 @@ export default function Input({
   required,
   type = "text",
   register,
+  mask,
   ...rest
 }: InputProps) {
   return (
@@ -22,11 +25,12 @@ export default function Input({
       </div>
       <div className="w-full sm:w-2/3 px-4">
         <div className="max-w-xl">
-          <input
-            required={required}
+          <InputMask
             type={type}
-            className="block py-4 px-3 w-full text-sm text-gray-50 placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-white focus:border-green-500 rounded-lg"
+            required={required}
             placeholder={placeholder}
+            mask={mask ?? ""}
+            className="block py-4 px-3 w-full text-sm text-gray-50 placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-white focus:border-green-500 rounded-lg"
             {...rest}
             {...register(name)}
           />
