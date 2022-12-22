@@ -70,7 +70,7 @@ export default function Register() {
               delay: 0.6,
               duration: 0.3,
             }}
-            className="mb-11 md:inline-block"
+            className="mb-11 md:inline-block sm:visible hidden"
           >
             <Link
               href="/register"
@@ -80,7 +80,7 @@ export default function Register() {
               <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-purple-500 group-hover:-skew-x-12"></span>
               <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
               <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
-              <span className="relative"> Регистрация</span>
+              <span className="relative">Регистрация</span>
             </Link>
           </motion.div>
         </div>
