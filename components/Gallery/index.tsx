@@ -6,7 +6,7 @@ export default function Gallery() {
           <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
             <div className="md:5/12 lg:w-5/12">
               <img
-                src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
+                src="https://fml.ywam.by/modules/website/img/fml2022-photo-3.jpeg"
                 alt="image"
                 loading="lazy"
               />
@@ -52,7 +52,7 @@ export default function Gallery() {
         </div>
       </div>
 
-      <section className="text-gray-600 body-font">
+      {/* <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4">
             <div className="lg:w-1/3 sm:w-1/2 p-4">
@@ -183,7 +183,7 @@ export default function Gallery() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

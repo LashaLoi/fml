@@ -30,7 +30,7 @@ export default function Input({
             required={required}
             placeholder={placeholder}
             mask={mask ?? ""}
-            className="block py-4 px-3 w-full text-sm text-gray-50 placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-white focus:border-green-500 rounded-lg"
+            className="block py-4 px-3 w-full text-sm text-gray-50 placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-white focus:border-yellow-500 rounded-lg"
             {...rest}
             {...register(name)}
           />

@@ -3,10 +3,10 @@ export default function FAQ() {
     <section className="relative pt-24 pb-28 bg-blueGray-50 overflow-hidden">
       <div className="relative z-8 container px-4 mx-auto">
         <div className="md:max-w-4xl mx-auto">
-          <p className="mb-7 text-sm text-indigo-600 text-center font-semibold uppercase tracking-px">
+          {/* <p className="mb-7 text-sm text-indigo-600 text-center font-semibold uppercase tracking-px">
             Все еще остались вопросы?
-          </p>
-          <h2 className="mb-16 text-4xl md:text-8xl xl:text-10xl text-center font-bold font-heading tracking-px-n leading-none">
+          </p> */}
+          {/* <h2 className="mb-16 text-4xl md:text-8xl xl:text-10xl text-center font-bold font-heading tracking-px-n leading-none">
             Часто задаваемые вопросы
           </h2>
           <div className="mb-11 flex flex-wrap -m-1">
@@ -70,11 +70,14 @@ export default function FAQ() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <p className="text-gray-600 text-center font-medium">
             <span className="mr-1">Все еще есть вопросы?</span>
             Напиши нам
-            <a className="font-semibold text-indigo-600 hover:text-indigo-700 ml-1">
+            <a
+              className="font-semibold text-purple-500 hover:text-purple-600 ml-1"
+              href="mailto: fml@ywam.by"
+            >
               - fml@ywam.by
             </a>{" "}
           </p>

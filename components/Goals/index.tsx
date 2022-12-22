@@ -11,7 +11,7 @@ export default function Goals() {
             <div className="w-full md:w-1/3 p-3.5">
               <div className="relative p-6 h-full bg-white border hover:border-gray-300 rounded-xl">
                 <div className="flex items-center mb-3">
-                  <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                  <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-yellow-500 text-white flex-shrink-0">
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -39,7 +39,7 @@ export default function Goals() {
             <div className="w-full md:w-1/3 p-3.5">
               <div className="relative p-6 h-full bg-white border hover:border-gray-300 rounded-xl shadow-9xl">
                 <div className="flex items-center mb-3">
-                  <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                  <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-purple-500 text-white flex-shrink-0">
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -68,7 +68,7 @@ export default function Goals() {
             <div className="w-full md:w-1/3 p-3.5">
               <div className="relative p-6 h-full bg-white border hover:border-gray-300 rounded-xl">
                 <div className="flex items-center mb-3">
-                  <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                  <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-gray-700 text-white flex-shrink-0">
                     <svg
                       fill="none"
                       stroke="currentColor"

@@ -17,12 +17,17 @@ export default function Register() {
               delay: 0.3,
               duration: 0.3,
             }}
-            className="text-gray-500 max-w-md mx-auto mb-10 sm:text-6xl text-5xl md:text-7xl font-bold font-heading text-start tracking-px-n leading-tight "
+            className="text-black mb-10 sm:text-5xl text-4xl font-bold  sm:text-center text-start "
           >
-            <div className="first-letter:text-yellow-500">Форум</div>
-            <div className="first-letter:text-purple-500">Молодежных</div>
-
-            <div className="first-letter:text-black">Лидеров</div>
+            <div className="first-letter:text-yellow-500 sm:first-letter:text-6xl first-letter:text-4xl ">
+              ФОРУМ
+            </div>
+            <div className="first-letter:text-purple-500 sm:first-letter:text-6xl first-letter:text-4xl ">
+              МОЛОДЕЖНЫХ
+            </div>
+            <div className="first-letter:text-gray-700 sm:first-letter:text-6xl first-letter:text-4xl ">
+              ЛИДЕРОВ
+            </div>
           </motion.h2>
           <motion.img
             initial={{
@@ -32,7 +37,7 @@ export default function Register() {
               opacity: 1,
             }}
             transition={{
-              delay: 0.3,
+              delay: 0.4,
               duration: 0.3,
             }}
             className="lg:w-4/6 md:w-3/6 w-full mb-10 object-cover object-center rounded mx-auto"
@@ -47,7 +52,7 @@ export default function Register() {
               opacity: 1,
             }}
             transition={{
-              delay: 0.4,
+              delay: 0.5,
               duration: 0.3,
             }}
             className="mb-7 text-lg text-gray-600 font-medium"
@@ -62,15 +67,20 @@ export default function Register() {
               opacity: 1,
             }}
             transition={{
-              delay: 0.5,
+              delay: 0.6,
               duration: 0.3,
             }}
             className="mb-11 md:inline-block"
           >
-            <Link href="/register">
-              <button className="flex mx-auto mt-4 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Регистрация
-              </button>
+            <Link
+              href="/register"
+              className="relative px-5 py-3 font-medium text-white group"
+            >
+              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-purple-700 group-hover:skew-x-12"></span>
+              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-purple-500 group-hover:-skew-x-12"></span>
+              <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
+              <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
+              <span className="relative"> Регистрация</span>
             </Link>
           </motion.div>
         </div>
