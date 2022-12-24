@@ -1,6 +1,6 @@
 export default function Users() {
   return (
-    <section className="relative pt-24 pb-32 bg-fixed bg-center bg-cover bg-[url('https://media.istockphoto.com/id/1031401224/photo/abstract-blurred-gradient-mesh-background-in-purple-and-blue-colors-colorful-smooth-banner.jpg?s=612x612&w=0&k=20&c=D4IhmxNPMiWnrm7JfHTze9GJ1I8mg-JV-J9L-VyAqMg=')] overflow-hidden">
+    <section className="relative pt-24 pb-32 bg-fixed bg-center bg-cover bg-[url('https://assets-global.website-files.com/5f6b9a421d5a61e1d0cd9e3d/62cc2c38807415e13567e97a_church-tech-worship-software-churches.png')] overflow-hidden">
       <div className="relative z-8 container px-4 mx-auto">
         <h2 className="mb-16 sm:text-6xl text-3xl text-white font-bold font-heading text-center tracking-px-n leading-tight">
           Отзывы участников ФМЛ2022
