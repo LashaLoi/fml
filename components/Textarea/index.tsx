@@ -12,6 +12,7 @@ export default function Textarea({
   name = "",
   placeholder,
   required,
+  defaultValue,
 }: TextareaProps) {
   return (
     <div className="flex flex-wrap items-start -mx-4 pb-8 mb-8 border-b border-gray-400 border-opacity-20">
@@ -26,6 +27,7 @@ export default function Textarea({
             placeholder={placeholder}
             className="block h-56 py-4 px-3 w-full text-sm text-gray-50 placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-white focus:border-yellow-500 rounded-lg resize-none"
             required={required}
+            defaultValue={defaultValue}
             {...register(name)}
           />
         </div>

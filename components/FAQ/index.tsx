@@ -1,8 +1,8 @@
 export default function FAQ() {
   return (
-    <section className="relative pt-24 pb-28 bg-blueGray-50 overflow-hidden">
+    <section className="relative pt-24 pb-28 overflow-hidden bg-fixed bg-center bg-cover bg-[url('https://i.redd.it/mn1dn7un1dj21.png')]">
       <div className="relative z-8 container px-4 mx-auto">
-        <div className="md:max-w-4xl mx-auto">
+        <div className="md:max-w-4xl mx-auto ">
           {/* <p className="mb-7 text-sm text-indigo-600 text-center font-semibold uppercase tracking-px">
             Все еще остались вопросы?
           </p> */}
@@ -71,7 +71,7 @@ export default function FAQ() {
               </div>
             </div>
           </div> */}
-          <p className="text-gray-600 text-center font-medium">
+          <p className="text-white text-center font-medium">
             <span className="mr-1">Все еще есть вопросы?</span>
             Напиши нам
             <a

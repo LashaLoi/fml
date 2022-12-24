@@ -141,13 +141,13 @@ export default function RegisterPage() {
         </div>
         <Select
           options={["3 Декабря", "4 Декабря", "Оба дня"]}
-          label="ДЕНь"
+          label="ДЕНЬ"
           name="days"
           required
           register={register}
         />
         <Input
-          label="Город"
+          label="ГОРОД"
           placeholder="Минск"
           name="city"
           required
@@ -197,10 +197,10 @@ export default function RegisterPage() {
           register={register}
         />
         <Textarea
+          defaultValue="..."
           label="ДЕТИ, КОТОРЫЕ ПОЕДУ С ВАМИ НА ФМЛ (ФИО, ВОЗРАСТ)"
           name="children"
           register={register}
-          required
           placeholder="..."
         />
         <Input
@@ -221,10 +221,11 @@ export default function RegisterPage() {
           type="email"
         />
         <Textarea
+          defaultValue="..."
           label="ЕСТЬ ВОПРОСЫ?"
           name="q"
           register={register}
-          required
+          // required
           placeholder="..."
         />
         <div className="flex flex-wrap items-center justify-between -mx-4 mb-8 pb-6  border-opacity-20">
