@@ -1,6 +1,10 @@
-export default function Users() {
+export default function Users({ isSafari }: { isSafari: boolean }) {
   return (
-    <section className="relative pt-24 pb-32 bg-fixed bg-center bg-cover bg-[url('https://assets-global.website-files.com/5f6b9a421d5a61e1d0cd9e3d/62cc2c38807415e13567e97a_church-tech-worship-software-churches.png')] overflow-hidden">
+    <section
+      className={`relative pt-24 pb-32 ${
+        isSafari ? "" : "bg-fixed"
+      } bg-center bg-cover bg-[url('https://assets-global.website-files.com/5f6b9a421d5a61e1d0cd9e3d/62cc2c38807415e13567e97a_church-tech-worship-software-churches.png')] overflow-hidden`}
+    >
       <div className="relative z-8 container px-4 mx-auto">
         <h2 className="mb-16 sm:text-6xl text-3xl text-white font-bold font-heading text-center tracking-px-n leading-tight">
           Отзывы участников ФМЛ2022

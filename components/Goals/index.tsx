@@ -1,8 +1,12 @@
 //
 
-export default function Goals() {
+export default function Goals({ isSafari }: { isSafari: boolean }) {
   return (
-    <section className="py-24 overflow-hidden bg-fixed bg-center bg-cover bg-[url('https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29yc2hpcHxlbnwwfHwwfHw%3D&w=1000&q=80')]">
+    <section
+      className={`py-24 overflow-hidden ${
+        isSafari ? "" : "bg-fixed"
+      } bg-center bg-cover bg-[url('https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29yc2hpcHxlbnwwfHwwfHw%3D&w=1000&q=80')]`}
+    >
       <div className="container px-4 mx-auto">
         <h2 className="mb-20 text-3xl text-center font-bold font-heading font-heading tracking-px-n leading-none text-white">
           НАШЕ ВИДЕНИЕ
