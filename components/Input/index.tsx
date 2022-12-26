@@ -16,8 +16,17 @@ export default function Input({
   type = "text",
   register,
   mask,
-  ...rest
 }: InputProps) {
+  const props = {
+    type: type,
+    required: required,
+    placeholder: placeholder,
+    mask: mask ?? "",
+    className:
+      "block py-4 px-3 w-full text-sm text-gray-50 placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-white focus:border-yellow-500 rounded-lg",
+    ...register(name),
+  };
+
   return (
     <label className="flex flex-wrap items-center -mx-4 pb-8 mb-8 border-b border-gray-400 border-opacity-20">
       <div className="w-full sm:w-1/3 px-4 mb-4 sm:mb-0">
@@ -25,15 +34,7 @@ export default function Input({
       </div>
       <div className="w-full sm:w-2/3 px-4">
         <div className="max-w-xl">
-          <InputMask
-            type={type}
-            required={required}
-            placeholder={placeholder}
-            mask={mask ?? ""}
-            className="block py-4 px-3 w-full text-sm text-gray-50 placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-white focus:border-yellow-500 rounded-lg"
-            {...rest}
-            {...register(name)}
-          />
+          {props.mask !== "" ? <InputMask {...props} /> : <input {...props} />}
         </div>
       </div>
     </label>

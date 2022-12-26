@@ -50,6 +50,8 @@ export default function RegisterPage() {
   const [open, setOpen] = useState(false);
 
   const onSubmit = async (data: any) => {
+    console.log({ data });
+
     try {
       await supabase.from("Users").insert([data]);
 
