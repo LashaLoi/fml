@@ -7,6 +7,8 @@ import { useForm } from "react-hook-form";
 import { supabase } from "supabaseClient";
 import Input from "../components/Input";
 
+import { send } from "@emailjs/browser";
+
 const Notification = ({ onClose }: { onClose: () => void }) => (
   <div className="z-50 fixed right-0 bottom-0 p-4">
     <div className="w-full max-w-xl p-6 mt-auto ml-auto bg-gray-500 rounded-lg">
@@ -50,10 +52,14 @@ export default function RegisterPage() {
   const [open, setOpen] = useState(false);
 
   const onSubmit = async (data: any) => {
-    console.log({ data });
-
     try {
       await supabase.from("Users").insert([data]);
+      await send(
+        "service_bpdz7dw",
+        "template_vigjva4",
+        { ...data, reply_to: "fml@ywam.by" },
+        "_d7Gy1hFeTL7avenj"
+      );
 
       router.push("/info");
     } catch (error) {
