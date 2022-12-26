@@ -70,7 +70,7 @@ export default function Register() {
               delay: 0.6,
               duration: 0.3,
             }}
-            className="mb-11 md:inline-block sm:visible hidden"
+            className="md:inline-block"
           >
             <Link
               href="/register"

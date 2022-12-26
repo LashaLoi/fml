@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import { supabase } from "supabaseClient";
 import Input from "../components/Input";
 
-const Notification = ({ onClose }: any) => (
+const Notification = ({ onClose }: { onClose: () => void }) => (
   <div className="z-50 fixed right-0 bottom-0 p-4">
     <div className="w-full max-w-xl p-6 mt-auto ml-auto bg-gray-500 rounded-lg">
       <div className="flex items-start justify-between -mx-2">
@@ -63,7 +63,7 @@ export default function RegisterPage() {
 
   return (
     <div className="p-8 bg-slate-900">
-      {open && <Notification onClise={() => setOpen(false)} />}
+      {open && <Notification onClose={() => setOpen(false)} />}
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="flex flex-wrap items-center -mx-4 pb-8 mb-8 border-b border-gray-400 border-opacity-20">
           <div className="w-full sm:w-1/3 px-4 mb-4 sm:mb-0">
@@ -234,7 +234,7 @@ export default function RegisterPage() {
               ВАШИ ДАННЫЕ
             </h4>
             <p className="text-sm text-gray-300">
-              ВВЕДИТЕ ВСЕ ДАННЫЕ ЧТОБЫ ЗАРЕГИСТРИРОВАТЬСЯ
+              ВВЕДИТЕ ВСЕ ДАННЫЕ, ЧТОБЫ ЗАРЕГИСТРИРОВАТЬСЯ
             </p>
           </div>
           <div className="w-full sm:w-auto px-4">
