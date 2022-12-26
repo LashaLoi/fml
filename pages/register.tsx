@@ -50,8 +50,11 @@ export default function RegisterPage() {
   const router = useRouter();
 
   const [open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const onSubmit = async (data: any) => {
+    setLoading(true);
+
     try {
       await supabase.from("Users").insert([data]);
       await send(
@@ -66,6 +69,8 @@ export default function RegisterPage() {
       console.log({ error });
 
       setOpen(true);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -259,6 +264,7 @@ export default function RegisterPage() {
               </button>
 
               <button
+                disabled={loading}
                 type="submit"
                 className="relative px-5 py-2 font-medium text-white group"
               >
@@ -266,7 +272,9 @@ export default function RegisterPage() {
                 <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-purple-500 group-hover:-skew-x-12"></span>
                 <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
                 <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
-                <span className="relative">ОТПРАВИТЬ</span>
+                <span className="relative">
+                  {loading ? "ОТПРАВКА..." : "ОТПРАВИТЬ"}
+                </span>
               </button>
             </div>
           </div>
