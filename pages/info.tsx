@@ -71,7 +71,7 @@ export default function Info() {
             }}
             className="text-lg font-bold mb-12 max-w-[600px] min-w-[300px] mx-auto"
           >
-            Надеемся что вы проведете прекрасно время и получите для себя
+            Надеемся, что вы проведете прекрасно время и получите для себя
             многое!
           </motion.p>
           <Link

@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { motion } from "framer-motion";
+
 export default function Gallery() {
   return (
     <>
@@ -5,7 +8,7 @@ export default function Gallery() {
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
           <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
             <div className="md:5/12 lg:w-5/12">
-              <img src="/hello.jpeg" alt="image" loading="lazy" />
+              <motion.img src="/hello.jpeg" alt="image" loading="lazy" />
             </div>
             <div className="md:7/12 lg:w-6/12">
               <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
@@ -48,10 +51,10 @@ export default function Gallery() {
         </div>
       </div>
 
-      {/* <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+      <section className="text-gray-600 body-font mb-16">
+        <div className="container px-5 py-10 mx-auto">
           <div className="flex flex-wrap -m-4">
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
+            {/* <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
                   alt="gallery"
@@ -113,13 +116,14 @@ export default function Gallery() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
+                <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/602x362"
+                  src="/1.PNG"
+                  fill
                 />
                 <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
@@ -137,10 +141,11 @@ export default function Gallery() {
             </div>
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
+                <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/605x365"
+                  src="/2.PNG"
+                  fill
                 />
                 <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
@@ -158,10 +163,11 @@ export default function Gallery() {
             </div>
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
+                <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/606x366"
+                  src="/3.PNG"
+                  fill
                 />
                 <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
@@ -179,7 +185,7 @@ export default function Gallery() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
     </>
   );
 }
