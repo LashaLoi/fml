@@ -3,10 +3,11 @@ import Goals from "../components/Goals";
 // import Program from "../components/Program";
 import Register from "../components/Register";
 import Users from "../components/Users";
-// import Map from "../components/Map";
+import Map from "../components/Map";
 import FAQ from "../components/FAQ";
 import Why from "../components/Why";
 import { useEffect, useState } from "react";
+import Price from "components/Price";
 // import About from "../components/About";
 
 export default function IndexPage() {
@@ -19,13 +20,14 @@ export default function IndexPage() {
   return (
     <>
       <Register />
+      <Price />
       <Goals isSafari={isSafari} />
       <Gallery />
       {/* <Program /> */}
       {/* <About /> */}
       <Users isSafari={isSafari} />
       <Why />
-      {/* <Map /> */}
+      <Map />
       <FAQ isSafari={isSafari} />
     </>
   );
