@@ -72,7 +72,16 @@ export default function Info() {
             className="text-lg font-bold mb-12 max-w-[600px] min-w-[300px] mx-auto"
           >
             Надеемся, что вы проведете прекрасно время и получите для себя
-            многое!
+            многое! Обязательно подпишитесь на наш Telegram канал. Там мы будем
+            публиковать все детали, по ФМЛ.{" "}
+            <a
+              className="cursor-pointer text-purple-500 font-extrabold"
+              href="https://t.me/fmlby"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              https://t.me/fmlby
+            </a>
           </motion.p>
           <Link
             className="group relative inline-block h-12 xs:w-60 bg-blueGray-900 rounded-md w-[300px]"
