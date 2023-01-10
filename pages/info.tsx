@@ -69,7 +69,7 @@ export default function Info() {
               delay: 0.5,
               duration: 0.3,
             }}
-            className="text-lg font-bold mb-12 max-w-[600px] min-w-[300px] mx-auto"
+            className="sm:text-lg text-md font-bold mb-4 max-w-[600px] min-w-[300px] mx-auto"
           >
             Надеемся, что вы проведете прекрасно время и получите для себя
             многое! Обязательно подпишитесь на наш Telegram канал. Там мы будем
@@ -83,6 +83,24 @@ export default function Info() {
               https://t.me/fmlby
             </a>
           </motion.p>
+          <motion.p
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              delay: 0.5,
+              duration: 0.3,
+            }}
+            className="sm:text-lg text-md font-extrabold mb-12 max-w-[600px] min-w-[300px] mx-auto"
+          >
+            ‼️ Обязательно возьмите с собой паспорт для регистрации на
+            проживание (если есть возможность, то сделайте ксерокопию последней
+            страницы и прописки)
+          </motion.p>
+
           <Link
             className="group relative inline-block h-12 xs:w-60 bg-blueGray-900 rounded-md w-[300px]"
             href="/"

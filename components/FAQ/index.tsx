@@ -1,10 +1,6 @@
 export default function FAQ({ isSafari }: { isSafari: boolean }) {
   return (
-    <section
-      className={`relative pt-24 pb-28 overflow-hidden ${
-        isSafari ? "" : "bg-fixed"
-      } bg-center bg-cover bg-[url('https://i.redd.it/mn1dn7un1dj21.png')]`}
-    >
+    <section className={`relative pt-24 pb-28 overflow-hidden `}>
       <div className="relative z-8 container px-4 mx-auto">
         <div className="md:max-w-4xl mx-auto ">
           {/* <p className="mb-7 text-sm text-indigo-600 text-center font-semibold uppercase tracking-px">
@@ -75,7 +71,7 @@ export default function FAQ({ isSafari }: { isSafari: boolean }) {
               </div>
             </div>
           </div> */}
-          <p className="text-white text-center font-medium">
+          <p className="text-black text-center font-medium">
             <span className="mr-1">Все еще есть вопросы?</span>
             Напиши нам
             <a
