@@ -1,6 +1,6 @@
 import Gallery from "../components/Gallery";
 import Goals from "../components/Goals";
-// import Program from "../components/Program";
+import Program from "../components/Program";
 import Register from "../components/Register";
 import Users from "../components/Users";
 import Map from "../components/Map";
@@ -23,7 +23,7 @@ export default function IndexPage() {
       <Price />
       <Goals isSafari={isSafari} />
       <Gallery />
-      {/* <Program /> */}
+      <Program />
       {/* <About /> */}
       <Users isSafari={isSafari} />
       <Why />

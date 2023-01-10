@@ -28,160 +28,150 @@ export default function Program() {
           </p>
         </div>
         <h1 className="sm:text-2xl text-lg font-medium text-center title-font text-gray-900 mb-4">
-          4 февраля 2022
+          3 февраля 2023, пт
         </h1>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
               <span className="title-font font-medium">
-                регистрация, расселение - 10.00
+                10:00 - регистрация, расселение
               </span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
-              <span className="title-font font-medium">1 сессия - 11.30</span>
+              <span className="title-font font-medium">11:30 - Сессия 1</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
-              <span className="title-font font-medium">обед - 13.30</span>
+              <span className="title-font font-medium">13:30 - обед</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
-              <span className="title-font font-medium">семинары - 14.30</span>
+              <span className="title-font font-medium">14:30 - семинары</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
-              <span className="title-font font-medium">кофе-пауза - 16.00</span>
+              <span className="title-font font-medium">16:00 - кофе-пауза</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
               <span className="title-font font-medium">
-                Topic Talks - 16.30
+                16:30 - topic talks
               </span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
-              <span className="title-font font-medium">ужин - 18.00</span>
-            </div>
-          </div>
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-              {icon}
-              <span className="title-font font-medium">2 сессия - 19.00</span>
-            </div>
-          </div>
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-              {icon}
-              <span className="title-font font-medium">кофе-пауза - 20.30</span>
+              <span className="title-font font-medium">18:00 - ужин</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
               <span className="title-font font-medium">
-                вечер-хвалы, молитвы - 21.00
+                19:00 - вечер хвалы и поклонения
               </span>
             </div>
           </div>
         </div>
 
         <h1 className="sm:text-2xl text-lg font-medium text-center title-font text-gray-900 my-4 mt-20">
-          5 февраля 2022
+          4 февраля 2023, сб
         </h1>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
-              <span className="title-font font-medium">8.00 - молитва</span>
+              <span className="title-font font-medium">8:00 - молитва</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
-              <span className="title-font font-medium">9.00 - завтрак</span>
+              <span className="title-font font-medium">9:00 - завтрак</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
-              <span className="title-font font-medium">10.00 - 3 сессия</span>
+              <span className="title-font font-medium">10:00 - Сессия 2</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
-              <span className="title-font font-medium">11.30 - кофе-пауза</span>
+              <span className="title-font font-medium">11:30 - кофе-пауза</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
-              <span className="title-font font-medium">12.00 - семинары</span>
+              <span className="title-font font-medium">12:00 - семинары</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
-              <span className="title-font font-medium">13.00 - обед</span>
+              <span className="title-font font-medium">13:00 - обед</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
               <span className="title-font font-medium">
-                14.00 - Topic Talks
+                14:00 - topic talks
               </span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
-              <span className="title-font font-medium">15.30 - кофе-пауза</span>
+              <span className="title-font font-medium">15:30 - кофе-пауза</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
-              <span className="title-font font-medium">16.00 - 4 сессия</span>
+              <span className="title-font font-medium">16:00 - Сессия 3</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
-              <span className="title-font font-medium">18.30 - ужин</span>
+              <span className="title-font font-medium">18:30 - ужин</span>
             </div>
           </div>
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
               {icon}
-              <span className="title-font font-medium">19.30 - отъезд</span>
+              <span className="title-font font-medium">19:30 - отъезд</span>
             </div>
           </div>
         </div>
-        <Link
-          href="/register"
-          className="relative px-5 py-2 font-medium text-white group"
-        >
-          <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-purple-700 group-hover:skew-x-12"></span>
-          <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-purple-500 group-hover:-skew-x-12"></span>
-          <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
-          <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
-          <span className="relative"> Регистрация</span>
-        </Link>
+        <div className="mt-10 w-full flex items-center justify-center">
+          <Link
+            href="/register"
+            className="relative px-5 py-2 font-medium text-white group"
+          >
+            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-purple-700 group-hover:skew-x-12"></span>
+            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-purple-500 group-hover:-skew-x-12"></span>
+            <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
+            <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
+            <span className="relative"> Регистрация</span>
+          </Link>
+        </div>
       </div>
     </section>
   );
