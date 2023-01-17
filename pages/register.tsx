@@ -153,7 +153,7 @@ export default function RegisterPage() {
           </div>
         </div>
         <Select
-          options={["3 Декабря", "4 Декабря", "Оба дня"]}
+          options={["3 Февраля", "4 Февраля", "Оба дня"]}
           label="ДЕНЬ"
           name="days"
           required
