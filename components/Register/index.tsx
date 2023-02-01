@@ -59,7 +59,7 @@ export default function Register() {
           >
             3-4 февраля 2023
           </motion.p>
-          <motion.div
+          {/* <motion.div
             initial={{
               opacity: 0,
             }}
@@ -82,7 +82,7 @@ export default function Register() {
               <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
               <span className="relative">Регистрация</span>
             </Link>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

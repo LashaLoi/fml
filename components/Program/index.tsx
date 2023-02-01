@@ -168,7 +168,7 @@ export default function Program() {
               </div>
             </div>
           </div>
-          <div className="mt-10 w-full flex items-center justify-center">
+          {/* <div className="mt-10 w-full flex items-center justify-center">
             <Link
               href="/register"
               className="relative px-5 py-2 font-medium text-white group"
@@ -179,7 +179,7 @@ export default function Program() {
               <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
               <span className="relative"> Регистрация</span>
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
 
