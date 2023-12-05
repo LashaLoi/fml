@@ -8,7 +8,7 @@ const icon = (
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth="3"
-    className="text-purple-500 w-6 h-6 flex-shrink-0 mr-4"
+    className="text-lime-400 w-6 h-6 flex-shrink-0 mr-4"
     viewBox="0 0 24 24"
   >
     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
@@ -30,7 +30,7 @@ export default function Program() {
             </p>
           </div>
           <h1 className="sm:text-2xl text-lg font-medium text-center title-font text-gray-900 mb-4">
-            3 февраля 2023, пт
+            2 февраля 2024, пт
           </h1>
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
             <div className="p-2 sm:w-1/2 w-full">
@@ -44,7 +44,15 @@ export default function Program() {
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 {icon}
-                <span className="title-font font-medium">11:30 - Сессия 1</span>
+                <span className="title-font font-medium">
+                  11:25 - обратный отсчет
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                {icon}
+                <span className="title-font font-medium">11:30 - cессия 1</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
@@ -56,14 +64,36 @@ export default function Program() {
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 {icon}
-                <span className="title-font font-medium">14:30 - семинары</span>
+                <span className="title-font font-medium">
+                  14:35 - extra talk
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                {icon}
+                <span className="title-font font-medium">15:00 - семинар</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 {icon}
                 <span className="title-font font-medium">
-                  16:00 - кофе-пауза
+                  15:35 - extra talk
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                {icon}
+                <span className="title-font font-medium">16:00 - семинар</span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                {icon}
+                <span className="title-font font-medium">
+                  16:30 - кофе-пауза
                 </span>
               </div>
             </div>
@@ -71,7 +101,7 @@ export default function Program() {
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 {icon}
                 <span className="title-font font-medium">
-                  16:30 - topic talks
+                  17:00 - topic talks
                 </span>
               </div>
             </div>
@@ -92,7 +122,7 @@ export default function Program() {
           </div>
 
           <h1 className="sm:text-2xl text-lg font-medium text-center title-font text-gray-900 my-4 mt-20">
-            4 февраля 2023, сб
+            3 февраля 2024, сб
           </h1>
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
             <div className="p-2 sm:w-1/2 w-full">
@@ -110,7 +140,7 @@ export default function Program() {
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 {icon}
-                <span className="title-font font-medium">10:00 - Сессия 2</span>
+                <span className="title-font font-medium">10:00 - cессия 2</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
@@ -124,20 +154,36 @@ export default function Program() {
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 {icon}
-                <span className="title-font font-medium">12:00 - семинары</span>
+                <span className="title-font font-medium">
+                  12:00 - extra talk
+                </span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 {icon}
-                <span className="title-font font-medium">13:00 - обед</span>
+                <span className="title-font font-medium">12:30 - семинар</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 {icon}
                 <span className="title-font font-medium">
-                  14:00 - topic talks
+                  13:00 - extra talk
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                {icon}
+                <span className="title-font font-medium">13:30 - обед</span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                {icon}
+                <span className="title-font font-medium">
+                  14:30 - topic talks:
                 </span>
               </div>
             </div>
@@ -158,6 +204,14 @@ export default function Program() {
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 {icon}
+                <span className="title-font font-medium">
+                  18:00 - Время на анкету
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                {icon}
                 <span className="title-font font-medium">18:30 - ужин</span>
               </div>
             </div>
@@ -168,22 +222,10 @@ export default function Program() {
               </div>
             </div>
           </div>
-          {/* <div className="mt-10 w-full flex items-center justify-center">
-            <Link
-              href="/register"
-              className="relative px-5 py-2 font-medium text-white group"
-            >
-              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-purple-700 group-hover:skew-x-12"></span>
-              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-purple-500 group-hover:-skew-x-12"></span>
-              <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
-              <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
-              <span className="relative"> Регистрация</span>
-            </Link>
-          </div> */}
         </div>
       </section>
 
-      <section className="text-gray-600 body-font py-24">
+      {/* <section className="text-gray-600 body-font py-24">
         <div className="text-center mb-10">
           <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
             ГЛАВНЫЙ СПИКЕР ФОРУМА
@@ -209,7 +251,7 @@ export default function Program() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

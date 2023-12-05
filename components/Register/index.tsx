@@ -1,90 +1,42 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Register() {
   return (
-    <section className="pt-12 pb-28 overflow-hidden">
-      <div className="container px-4 mx-auto">
-        <div className="text-center mx-auto">
-          <motion.h2
-            initial={{
-              opacity: 0,
+    <div className="flex justify-center pt-[60px]">
+      <div className="lg:h-[800px] md:h-[600px] h-[400px] md:w-full sm:w-5/6 w-full bg-red-200 relative rounded-lg sm:m-4 m-0">
+        <div className="sm:block hidden">
+          <Image
+            src="/main-logo.jpg"
+            fill
+            alt="main logo"
+            priority={true}
+            loading="eager"
+            style={{
+              objectFit: "cover",
+              objectPosition: "bottom right",
+              borderRadius: "10px",
             }}
-            animate={{
-              opacity: 1,
-            }}
-            transition={{
-              delay: 0.3,
-              duration: 0.3,
-            }}
-            className="text-black mb-10 sm:text-5xl text-4xl font-bold  sm:text-center text-start "
-          >
-            <div className="first-letter:text-yellow-500 sm:first-letter:text-6xl first-letter:text-4xl ">
-              ФОРУМ
-            </div>
-            <div className="first-letter:text-purple-500 sm:first-letter:text-6xl first-letter:text-4xl ">
-              МОЛОДЕЖНЫХ
-            </div>
-            <div className="first-letter:text-gray-700 sm:first-letter:text-6xl first-letter:text-4xl ">
-              ЛИДЕРОВ
-            </div>
-          </motion.h2>
-          <motion.img
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: 1,
-            }}
-            transition={{
-              delay: 0.4,
-              duration: 0.3,
-            }}
-            className="lg:w-4/6 md:w-3/6 w-full mb-10 object-cover object-center rounded mx-auto"
-            alt="hero"
-            src="/banner.jpg"
+            quality={100}
           />
-          <motion.p
-            initial={{
-              opacity: 0,
+        </div>
+        <div className="sm:hidden">
+          <Image
+            src="/small.jpg"
+            fill
+            alt="main logo"
+            priority={true}
+            loading="eager"
+            style={{
+              objectFit: "cover",
+              objectPosition: "bottom",
+              borderRadius: "10px",
             }}
-            animate={{
-              opacity: 1,
-            }}
-            transition={{
-              delay: 0.5,
-              duration: 0.3,
-            }}
-            className="mb-7 text-lg text-gray-600 font-medium"
-          >
-            3-4 февраля 2023
-          </motion.p>
-          {/* <motion.div
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: 1,
-            }}
-            transition={{
-              delay: 0.6,
-              duration: 0.3,
-            }}
-            className="md:inline-block"
-          >
-            <Link
-              href="/register"
-              className="relative px-5 py-3 font-medium text-white group"
-            >
-              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-purple-700 group-hover:skew-x-12"></span>
-              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-purple-500 group-hover:-skew-x-12"></span>
-              <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
-              <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
-              <span className="relative">Регистрация</span>
-            </Link>
-          </motion.div> */}
+            quality={100}
+          />
         </div>
       </div>
-    </section>
+    </div>
   );
 }

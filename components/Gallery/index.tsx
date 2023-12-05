@@ -6,13 +6,13 @@ export default function Gallery() {
     <>
       <div className="py-16 bg-white ">
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-          <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+          <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:gap-12">
             <div className="md:5/12 lg:w-5/12">
               <motion.img src="/hello.jpeg" alt="image" loading="lazy" />
             </div>
             <div className="md:7/12 lg:w-6/12">
               <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
-                ФМЛ 2023 «Верен призывающий»
+                ФМЛ 2024 - EXTRA
               </h2>
               <p className="mt-6 text-gray-600">
                 Привет, молодёжный лидер из Беларуси! Ты занимаешься
@@ -54,19 +54,20 @@ export default function Gallery() {
       <section className="text-gray-600 body-font mb-16">
         <div className="container px-5 py-10 mx-auto">
           <div className="flex flex-wrap -m-4">
-            {/* <div className="lg:w-1/3 sm:w-1/2 p-4">
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
+                <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/600x360"
+                  src="/1.PNG"
+                  fill
                 />
                 <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                     THE SUBTITLE
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Shooting Stars
+                    Neptune
                   </h1>
                   <p className="leading-relaxed">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
@@ -77,17 +78,18 @@ export default function Gallery() {
             </div>
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
+                <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/601x361"
+                  src="/1.PNG"
+                  fill
                 />
                 <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                     THE SUBTITLE
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    The Catalyzer
+                    Neptune
                   </h1>
                   <p className="leading-relaxed">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
@@ -98,17 +100,18 @@ export default function Gallery() {
             </div>
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
-                <img
+                <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://dummyimage.com/603x363"
+                  src="/1.PNG"
+                  fill
                 />
                 <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
                     THE SUBTITLE
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    The 400 Blows
+                    Neptune
                   </h1>
                   <p className="leading-relaxed">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
@@ -116,7 +119,7 @@ export default function Gallery() {
                   </p>
                 </div>
               </div>
-            </div> */}
+            </div>
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <Image
