@@ -8,7 +8,7 @@ export default function Gallery() {
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
           <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:gap-12">
             <div className="md:5/12 lg:w-5/12">
-              <motion.img src="/hello.jpeg" alt="image" loading="lazy" />
+              <motion.img src="/1.jpg" alt="image" loading="lazy" />
             </div>
             <div className="md:7/12 lg:w-6/12">
               <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
@@ -59,7 +59,7 @@ export default function Gallery() {
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="/1.PNG"
+                  src="/4.jpg"
                   fill
                 />
                 <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">
@@ -81,7 +81,7 @@ export default function Gallery() {
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="/1.PNG"
+                  src="/2.jpg"
                   fill
                 />
                 <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">
@@ -103,7 +103,7 @@ export default function Gallery() {
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="/1.PNG"
+                  src="/3.jpg"
                   fill
                 />
                 <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">

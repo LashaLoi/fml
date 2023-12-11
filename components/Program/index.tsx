@@ -1,21 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const icon = (
-  <svg
-    fill="none"
-    stroke="currentColor"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    strokeWidth="3"
-    className="text-lime-400 w-6 h-6 flex-shrink-0 mr-4"
-    viewBox="0 0 24 24"
-  >
-    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-    <path d="M22 4L12 14.01l-3-3"></path>
-  </svg>
-);
-
 export default function Program() {
   return (
     <>
@@ -35,7 +20,6 @@ export default function Program() {
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">
                   10:00 - регистрация, расселение
                 </span>
@@ -43,7 +27,6 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">
                   11:25 - обратный отсчет
                 </span>
@@ -51,19 +34,16 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">11:30 - cессия 1</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">13:30 - обед</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">
                   14:35 - extra talk
                 </span>
@@ -71,13 +51,11 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">15:00 - семинар</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">
                   15:35 - extra talk
                 </span>
@@ -85,13 +63,11 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">16:00 - семинар</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">
                   16:30 - кофе-пауза
                 </span>
@@ -99,7 +75,6 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">
                   17:00 - topic talks
                 </span>
@@ -107,13 +82,11 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">18:00 - ужин</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">
                   19:00 - вечер хвалы и поклонения
                 </span>
@@ -127,25 +100,21 @@ export default function Program() {
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">8:00 - молитва</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">9:00 - завтрак</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">10:00 - cессия 2</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">
                   11:30 - кофе-пауза
                 </span>
@@ -153,7 +122,6 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">
                   12:00 - extra talk
                 </span>
@@ -161,13 +129,11 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">12:30 - семинар</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">
                   13:00 - extra talk
                 </span>
@@ -175,13 +141,11 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">13:30 - обед</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">
                   14:30 - topic talks:
                 </span>
@@ -189,7 +153,6 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">
                   15:30 - кофе-пауза
                 </span>
@@ -197,13 +160,11 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">16:00 - Сессия 3</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">
                   18:00 - Время на анкету
                 </span>
@@ -211,13 +172,11 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">18:30 - ужин</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                {icon}
                 <span className="title-font font-medium">19:30 - отъезд</span>
               </div>
             </div>
