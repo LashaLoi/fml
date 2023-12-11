@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Register() {
   return (
     <div className="flex justify-center pt-[60px]">
-      <div className="lg:h-[800px] md:h-[600px] h-[400px] md:w-full sm:w-5/6 w-full bg-red-200 relative rounded-lg sm:m-4 m-0">
+      <div className="lg:h-[800px] md:h-[600px] h-[400px] md:w-full sm:w-5/6 w-full bg-gray-700 relative rounded-lg sm:m-4 m-0">
         <div className="sm:block hidden">
           <Image
             src="/main-logo.jpg"

@@ -9,9 +9,14 @@ export default function Header() {
       >
         <span className="sm:text-3xl text-lg">ФМЛ / EXTRA</span>
       </Link>
-      <button className="relative px-5 py-2 font-medium text-white group bg-gray-700 hover:bg-gray-800 active:bg-gray-900">
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://t.me/fml_next_bot"
+        className="relative px-5 py-2 font-medium text-white group bg-gray-700 hover:bg-gray-800 active:bg-gray-900"
+      >
         РЕГИСТРАЦИЯ
-      </button>
+      </a>
     </nav>
   );
 }
