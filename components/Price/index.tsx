@@ -11,9 +11,8 @@ export default function Price() {
           </h1>
           <p className="my-7 sm:text-2xl text-lg text-gray-600 font-medium max-w-3xl mx-auto">
             Участие возможно за пожертвование в размере{" "}
-            <span className="font-extrabold text-black">140р</span> в пресечете
-            на бел.руб, а с 21 января -{" "}
-            <span className="font-extrabold text-black">150р</span>{" "}
+            <span className="font-extrabold text-black">140р</span>, а с 21
+            января - <span className="font-extrabold text-black">150р</span>{" "}
             соответственно.
           </p>
         </div>

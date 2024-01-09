@@ -27,14 +27,7 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">
-                  11:25 - обратный отсчет
-                </span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">11:30 - Сессия 1</span>
+                <span className="title-font font-medium">11:30 - cессия 1</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
@@ -44,9 +37,7 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">
-                  14:30 - семинары:
-                </span>
+                <span className="title-font font-medium">14:30 - семинары</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
@@ -117,7 +108,7 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">10:00 - Cессия 2</span>
+                <span className="title-font font-medium">10:00 - сессия 2</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
@@ -154,7 +145,7 @@ export default function Program() {
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  14:30 - topic talks:
+                  14:30 - topic talks
                 </span>
               </div>
             </div>
@@ -167,7 +158,7 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">16:00 - Сессия 3</span>
+                <span className="title-font font-medium">16:00 - сессия 3</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">

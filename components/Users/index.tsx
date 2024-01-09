@@ -7,7 +7,7 @@ export default function Users({ isSafari }: { isSafari: boolean }) {
     >
       <div className="relative z-8 container px-4 mx-auto">
         <h2 className="mb-16 sm:text-6xl text-3xl text-white font-bold font-heading text-center tracking-px-n leading-tight">
-          Отзывы участников ФМЛ2022
+          Отзывы участников ФМЛ2023
         </h2>
         <div className="flex flex-wrap -m-3">
           <div className="w-full md:w-1/2 lg:w-1/3 p-3">
