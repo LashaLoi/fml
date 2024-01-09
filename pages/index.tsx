@@ -9,6 +9,7 @@ import Price from "../components/Price";
 import Map from "../components/Map";
 import FAQ from "../components/FAQ";
 import Why from "../components/Why";
+import About from "../components/About";
 
 export default function IndexPage() {
   const [isSafari, setIsSafari] = useState(false);
@@ -23,6 +24,7 @@ export default function IndexPage() {
       <Goals isSafari={isSafari} />
       <Price />
       <Gallery />
+      <About />
       <Program />
       <Users isSafari={isSafari} />
       <Why />

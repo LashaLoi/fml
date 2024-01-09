@@ -8,23 +8,48 @@ export default function About() {
               В программе
             </h1>
           </div>
-          <ul className="overflow-hidden shadow-md">
-            <li className="sm:text-2xl text-lg sm:flex items-center justify-between sm:p-10 p-2 bg-white hover:bg-sky-100 hover:text-sky-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out">
-              <span>Как лидеру найти баланс духовности и человечности?</span>
-              <span> - Наталья Шейбак</span>
+          <ul className="overflow-hidden shadow-md text-center">
+            <li className="sm:text-2xl text-lg sm:flex items-center justify-between sm:p-10 p-2 bg-white hover:bg-lime-300 hover:text-sky-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out">
+              <span>Бюджет проектов и мероприятий</span>
+              <br className="sm:hidden block " />
+              <span>Аня Дригайло</span>
             </li>
-            <li className="sm:text-2xl text-lg sm:flex items-center justify-between sm:p-10 p-2 bg-white hover:bg-sky-100 hover:text-sky-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out">
-              <span>Совместное изучении Библии в группах</span>
-              <span> - Александ Герасимович</span>
+            <li className="sm:text-2xl text-lg sm:flex items-center justify-between sm:p-10 p-2 bg-white hover:bg-lime-300 hover:text-lime-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out">
+              <span>Ораторское искусство</span>
+              <br className="sm:hidden block " />
+              <span>Сергей Чучман</span>
             </li>
-            <li className="sm:text-2xl text-lg sm:flex items-center justify-between sm:p-10 p-2 bg-white hover:bg-sky-100 hover:text-sky-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out">
-              <span>Голубые каски миротворчества</span>
-              <span> - Павел Калоша</span>
+            <li className="sm:text-2xl text-lg sm:flex items-center justify-between sm:p-10 p-2 bg-white hover:bg-lime-300 hover:text-lime-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out">
+              <span>Мне нужно больше</span>
+              <br className="sm:hidden block " />
+              <span>Моисей Кмит</span>
             </li>
 
-            <li className="sm:text-2xl text-lg sm:flex items-center justify-between sm:p-10 p-2 bg-white hover:bg-sky-100 hover:text-sky-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out">
-              <span>Финансовое ученичество</span>
-              <span> - Андрей Пташников</span>
+            <li className="sm:text-2xl text-lg sm:flex items-center justify-between sm:p-10 p-2 bg-white hover:bg-lime-300 hover:text-lime-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out">
+              <span>Культура команды, атмосфера</span>
+              <br className="sm:hidden block " />
+              <span>Андрей Шайтар</span>
+            </li>
+
+            <li className="sm:text-2xl text-lg sm:flex items-center justify-between sm:p-10 p-2 bg-white hover:bg-lime-300 hover:text-lime-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out">
+              <span>Прославление</span>
+              <br className="sm:hidden block " />
+              <span>Эстера Вороненко</span>
+            </li>
+            <li className="sm:text-2xl text-lg sm:flex items-center justify-between sm:p-10 p-2 bg-white hover:bg-lime-300 hover:text-lime-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out">
+              <span>Как раскрыть истинный потенциал</span>
+              <br className="sm:hidden block " />
+              <span>Любава</span>
+            </li>
+            <li className="sm:text-2xl text-lg sm:flex items-center justify-between sm:p-10 p-2 bg-white hover:bg-lime-300 hover:text-lime-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out">
+              <span>Ставь цели и достигай</span>
+              <br className="sm:hidden block " />
+              <span>Любава</span>
+            </li>
+            <li className="sm:text-2xl text-lg sm:flex items-center justify-between sm:p-10 p-2 bg-white hover:bg-lime-300 hover:text-lime-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out">
+              <span>ИБДН</span>
+              <br className="sm:hidden block " />
+              <span>Дима Оковитый</span>
             </li>
           </ul>
         </div>
