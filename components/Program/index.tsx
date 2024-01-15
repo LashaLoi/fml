@@ -167,13 +167,6 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">
-                  18:00 - время на анкету (обратная связь)
-                </span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">18:30 - ужин</span>
               </div>
             </div>
@@ -185,34 +178,6 @@ export default function Program() {
           </div>
         </div>
       </section>
-
-      {/* <section className="text-gray-600 body-font py-24">
-        <div className="text-center mb-10">
-          <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
-            ГЛАВНЫЙ СПИКЕР ФОРУМА
-          </h1>
-        </div>
-        <div className="container mx-auto flex  md:flex-row flex-col items-center">
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <Image
-              className="object-cover object-center rounded"
-              alt="hero"
-              src="/main.JPG"
-              height={720}
-              width={600}
-            />
-          </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-              ПРАВОЗОРОВ ДЕНИС АНАТОЛЬЕВИЧ
-            </h1>
-            <p className="mb-8 leading-relaxed">
-              Ректор колледжа Объединения, лидер, проповедник, пастор, муж одной
-              жены и заботливый отец двух детей.
-            </p>
-          </div>
-        </div>
-      </section> */}
     </>
   );
 }
