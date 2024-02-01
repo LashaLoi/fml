@@ -9,7 +9,7 @@ export default function Header() {
       >
         <span className="sm:text-3xl text-lg">ФМЛ / EXTRA</span>
       </Link>
-      <a
+      {/* <a
         target="_blank"
         rel="noreferrer"
         href="https://t.me/fml_next_bot"
@@ -38,7 +38,7 @@ export default function Header() {
             />
           </g>
         </svg>
-      </a>
+      </a> */}
     </nav>
   );
 }
