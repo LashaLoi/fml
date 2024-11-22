@@ -1,13 +1,10 @@
 import Select from "components/Select";
 import Textarea from "components/Textarea";
-import Link from "next/link";
+
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { supabase } from "supabaseClient";
 import Input from "../components/Input";
-
-import { send } from "@emailjs/browser";
 
 const Notification = ({ onClose }: { onClose: () => void }) => (
   <div className="z-50 fixed right-0 bottom-0 p-4">
@@ -52,16 +49,20 @@ export default function RegisterPage() {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const onSubmit = async (data: any) => {
+  const onSubmit = async (result: any) => {
     setLoading(true);
 
     try {
-      await supabase.from("Users").insert([data]);
-      await send(
-        "service_bpdz7dw",
-        "template_vigjva4",
-        { ...data, reply_to: "fml@ywam.by" },
-        "_d7Gy1hFeTL7avenj"
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbyLRYrutl1a0AmoExYINW_u0dO8MxZMBoFfXRmehTbDr1oleYpfnJFeBVVxMUZ7N2Pb/exec",
+        {
+          redirect: "follow",
+          method: "POST",
+          headers: {
+            "Content-Type": "text/plain;charset=utf-8",
+          },
+          body: JSON.stringify(result),
+        }
       );
 
       router.push("/info");
@@ -75,57 +76,12 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="p-8 bg-slate-900">
+    <div className="p-8">
       {open && <Notification onClose={() => setOpen(false)} />}
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="flex flex-wrap items-center -mx-4 pb-8 mb-8 border-b border-gray-400 border-opacity-20">
           <div className="w-full sm:w-1/3 px-4 mb-4 sm:mb-0">
-            <Link
-              href="/"
-              className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-white transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-900 group"
-            >
-              <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-purple-600 group-hover:h-full"></span>
-              <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
-                <svg
-                  className="w-5 h-5 text-yellow-500 rotate-180"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  ></path>
-                </svg>
-              </span>
-              <span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
-                <svg
-                  className="w-5 h-5 text-yellow-500 rotate-180"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  ></path>
-                </svg>
-              </span>
-              <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
-                ВЕРНУТЬСЯ НАЗАД
-              </span>
-            </Link>
-          </div>
-        </div>
-        <div className="flex flex-wrap items-center -mx-4 pb-8 mb-8 border-b border-gray-400 border-opacity-20">
-          <div className="w-full sm:w-1/3 px-4 mb-4 sm:mb-0">
-            <span className="text-sm font-medium text-gray-100">
+            <span className="text-sm font-medium text-black">
               ФАМИЛИЯ / ИМЯ
             </span>
           </div>
@@ -135,7 +91,7 @@ export default function RegisterPage() {
                 <div className="w-full sm:w-1/2 px-3 mb-3 sm:mb-0">
                   <input
                     required
-                    className="block py-4 px-3 w-full text-sm text-gray-50 placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-white focus:border-yellow-500 rounded-lg"
+                    className="block py-4 px-3 w-full text-sm text-black placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-black focus:border-yellow-500 rounded-lg"
                     placeholder="ФАМИЛИЯ"
                     {...register("firstName")}
                   />
@@ -143,7 +99,7 @@ export default function RegisterPage() {
                 <div className="w-full sm:w-1/2 px-3">
                   <input
                     required
-                    className="block py-4 px-3 w-full text-sm text-gray-50 placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-white focus:border-yellow-500 rounded-lg"
+                    className="block py-4 px-3 w-full text-sm text-black placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-black focus:border-yellow-500 rounded-lg"
                     placeholder="ИМЯ"
                     {...register("lastName")}
                   />
@@ -238,46 +194,33 @@ export default function RegisterPage() {
           label="ЕСТЬ ВОПРОСЫ?"
           name="q"
           register={register}
-          // required
           placeholder="..."
         />
-        <div className="flex flex-wrap items-center justify-between -mx-4 mb-8 pb-6  border-opacity-20">
-          <div className="w-full sm:w-auto px-4 mb-6 sm:mb-0">
-            <h4 className="text-2xl font-bold tracking-wide text-white mb-1">
-              ВАШИ ДАННЫЕ
-            </h4>
-            <p className="text-sm text-gray-300">
-              ВВЕДИТЕ ВСЕ ДАННЫЕ, ЧТОБЫ ЗАРЕГИСТРИРОВАТЬСЯ
-            </p>
-          </div>
-          <div className="w-full sm:w-auto px-4">
-            <div>
-              <button
-                type="submit"
-                className="relative px-5 py-2 font-medium text-white group mr-10"
-              >
-                <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-gray-500 group-hover:bg-gray-700 group-hover:skew-x-12"></span>
-                <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-gray-700 group-hover:bg-gray-500 group-hover:-skew-x-12"></span>
-                <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-gray-600 -rotate-12"></span>
-                <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-gray-400 -rotate-12"></span>
-                <span className="relative">СБРОСИТЬ</span>
-              </button>
+        <div className="flex flex-wrap items-center justify-around -mx-4 mb-8 pb-6  border-opacity-20">
+          <button
+            type="reset"
+            className="relative px-5 py-2 font-medium text-white group mr-10"
+          >
+            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-gray-500 group-hover:bg-gray-700 group-hover:skew-x-12"></span>
+            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-gray-700 group-hover:bg-gray-500 group-hover:-skew-x-12"></span>
+            <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-gray-600 -rotate-12"></span>
+            <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-gray-400 -rotate-12"></span>
+            <span className="relative">СБРОСИТЬ</span>
+          </button>
 
-              <button
-                disabled={loading}
-                type="submit"
-                className="relative px-5 py-2 font-medium text-white group"
-              >
-                <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-purple-700 group-hover:skew-x-12"></span>
-                <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-purple-500 group-hover:-skew-x-12"></span>
-                <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
-                <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
-                <span className="relative">
-                  {loading ? "ОТПРАВКА..." : "ОТПРАВИТЬ"}
-                </span>
-              </button>
-            </div>
-          </div>
+          <button
+            disabled={loading}
+            type="submit"
+            className="relative px-5 py-2 font-medium text-white group"
+          >
+            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-yellow-500 group-hover:bg-yellow-700 group-hover:skew-x-12"></span>
+            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-yellow-700 group-hover:bg-yellow-500 group-hover:-skew-x-12"></span>
+            <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-yellow-600 -rotate-12"></span>
+            <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-yellow-400 -rotate-12"></span>
+            <span className="relative">
+              {loading ? "ОТПРАВКА..." : "ОТПРАВИТЬ"}
+            </span>
+          </button>
         </div>
       </form>
     </div>
