@@ -17,7 +17,7 @@ export default function Info() {
               delay: 0,
               duration: 0.3,
             }}
-            className="inline-block mx-auto mb-6 fill-yellow-500"
+            className="inline-block mx-auto mb-6 fill-[#47A8B7]"
           >
             <svg
               width="54"
@@ -39,7 +39,7 @@ export default function Info() {
               delay: 0,
               duration: 0.3,
             }}
-            className="block mb-4 text-sm font-bold text-purple-500"
+            className="block mb-4 text-sm font-bold text-[#BDC31D]"
           >
             Успешно!
           </motion.span>
@@ -75,7 +75,7 @@ export default function Info() {
             многое! Обязательно подпишитесь на наш Telegram канал. Там мы будем
             публиковать все детали, по ФМЛ.{" "}
             <a
-              className="cursor-pointer text-purple-500 font-extrabold"
+              className="cursor-pointer text-[#BDC31D] font-extrabold"
               href="https://t.me/fmlby"
               rel="noopener noreferrer"
               target="_blank"

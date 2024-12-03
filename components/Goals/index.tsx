@@ -8,7 +8,7 @@ export default function Goals({ isSafari }: { isSafari: boolean }) {
       <section
         className={`py-24 overflow-hidden ${
           isSafari ? "" : "bg-fixed"
-        } bg-center bg-cover bg-[url('/rod.jpg')]`}
+        } bg-center bg-cover bg-[url('https://static.vecteezy.com/system/resources/previews/011/449/273/non_2x/70s-retro-perspective-lines-background-vintage-colourful-stripes-banner-backdrop-and-wallpaper-vector.jpg')]`}
       >
         <div className="container px-4 mx-auto">
           <h2 className="mb-20 text-3xl text-center font-bold font-heading font-heading tracking-px-n leading-none text-white relative">
@@ -20,7 +20,7 @@ export default function Goals({ isSafari }: { isSafari: boolean }) {
               <div className="w-full md:w-1/3 p-3.5">
                 <div className="relative p-6 h-full bg-white border hover:border-gray-300 rounded-xl">
                   <div className="flex items-center mb-3">
-                    <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-gray-400 text-white flex-shrink-0">
+                    <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-[#47A8B7] text-white flex-shrink-0">
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -48,7 +48,7 @@ export default function Goals({ isSafari }: { isSafari: boolean }) {
               <div className="w-full md:w-1/3 p-3.5">
                 <div className="relative p-6 h-full bg-white border hover:border-gray-300 rounded-xl shadow-9xl">
                   <div className="flex items-center mb-3">
-                    <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-[#F1FE12] text-white flex-shrink-0">
+                    <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-[#BDC31D] text-white flex-shrink-0">
                       <svg
                         fill="none"
                         stroke="currentColor"

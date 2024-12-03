@@ -109,8 +109,9 @@ export default function RegisterPage() {
           </div>
         </div>
         <Select
-          options={["3 Февраля", "4 Февраля", "Оба дня"]}
+          options={["31 января", "1 февраля", "Оба дня"]}
           label="ДЕНЬ"
+          defaultValue={"Оба дня"}
           name="days"
           required
           register={register}
@@ -174,8 +175,8 @@ export default function RegisterPage() {
         />
         <Input
           label="ТЕЛЕФОН"
-          placeholder="+375 (29/33) 123 45 67"
-          mask="+375 (99) 999 99 99"
+          placeholder="+375 (29/33) 123 45 67 или 8 029 1234567"
+          pastMask
           name="phone"
           required
           register={register}
@@ -213,10 +214,10 @@ export default function RegisterPage() {
             type="submit"
             className="relative px-5 py-2 font-medium text-white group"
           >
-            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-yellow-500 group-hover:bg-yellow-700 group-hover:skew-x-12"></span>
-            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-yellow-700 group-hover:bg-yellow-500 group-hover:-skew-x-12"></span>
-            <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-yellow-600 -rotate-12"></span>
-            <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-yellow-400 -rotate-12"></span>
+            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-[#47A8B7] group-hover:bg-[#47A8B7] group-hover:skew-x-12"></span>
+            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-[#47A8B790] group-hover:bg-[#47A8B7] group-hover:-skew-x-12"></span>
+            <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-[#47A8B795] -rotate-12"></span>
+            <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-[#47A8B795] -rotate-12"></span>
             <span className="relative">
               {loading ? "ОТПРАВКА..." : "ОТПРАВИТЬ"}
             </span>

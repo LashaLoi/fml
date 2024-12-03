@@ -13,7 +13,7 @@ export default function Header() {
       </Link>
       <Link
         href="/register"
-        className="relative px-5 py-2 text-black group bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-500 flex gap-4 justify-between"
+        className="relative px-5 py-2 text-black group bg-[#BDC31D] hover:bg-[#BDC31D95] active:bg-yellow-500 flex gap-4 justify-between"
       >
         РЕГИСТРАЦИЯ
       </Link>

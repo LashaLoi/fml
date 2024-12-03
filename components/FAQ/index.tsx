@@ -7,7 +7,7 @@ export default function FAQ() {
             <span className="mr-1">Все еще есть вопросы?</span>
             Напиши нам
             <a
-              className="font-semibold text-lime-500 hover:text-lime-600 ml-1"
+              className="font-semibold text-[#BDC31D] hover:text-[#BDC31D95] ml-1"
               href="mailto: fml@ywam.by"
             >
               - fml@ywam.by

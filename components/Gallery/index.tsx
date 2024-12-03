@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 export default function Gallery() {
   return (
     <>
-      <div className="py-16 bg-white ">
+      <div className=" bg-white ">
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
           <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:gap-12">
             <div className="md:5/12 lg:w-5/12">
-              <motion.img src="/1.jpg" alt="image" loading="lazy" />
+              <motion.img src="/01.jpg" alt="image" loading="lazy" />
             </div>
             <div className="md:7/12 lg:w-6/12">
               <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
@@ -55,29 +55,7 @@ export default function Gallery() {
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="/4.jpg"
-                  fill
-                />
-                <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Neptune
-                  </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
-                <Image
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="/2.jpg"
+                  src="/02.jpg"
                   fill
                 />
                 <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">
@@ -99,7 +77,7 @@ export default function Gallery() {
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-top"
-                  src="/3.jpg"
+                  src="/03.jpg"
                   fill
                 />
                 <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">
@@ -121,7 +99,7 @@ export default function Gallery() {
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="/1.PNG"
+                  src="/04.jpg"
                   fill
                 />
                 <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">
@@ -143,7 +121,29 @@ export default function Gallery() {
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="/2.PNG"
+                  src="/05.jpg"
+                  fill
+                />
+                <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                    THE SUBTITLE
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    Neptune
+                  </h1>
+                  <p className="leading-relaxed">
+                    Photo booth fam kinfolk cold-pressed sriracha leggings
+                    jianbing microdosing tousled waistcoat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative">
+                <Image
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src="/06.jpg"
                   fill
                 />
                 <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">
@@ -165,7 +165,7 @@ export default function Gallery() {
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="/3.PNG"
+                  src="/08.jpg"
                   fill
                 />
                 <div className="px-8 py-10 relative z-8 w-full border-4 border-gray-200 bg-white opacity-0 ">
