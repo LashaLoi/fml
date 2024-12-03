@@ -6,7 +6,7 @@ import Program from "../components/Program";
 import Register from "../components/Register";
 import Users from "../components/Users";
 import Price from "../components/Price";
-import Map from "../components/Map";
+// import Map from "../components/Map";
 import FAQ from "../components/FAQ";
 import Why from "../components/Why";
 import About from "../components/About";
@@ -28,7 +28,7 @@ export default function IndexPage() {
       <Program />
       <Users isSafari={isSafari} />
       <Why />
-      <Map />
+      {/* <Map /> */}
       <FAQ />
     </>
   );
