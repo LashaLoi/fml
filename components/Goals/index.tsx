@@ -6,7 +6,7 @@ export default function Goals({ isSafari }: { isSafari: boolean }) {
       <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-80"></div>
 
       <section
-        className={`py-24 overflow-hidden ${
+        className={`mb-10 py-24 overflow-hidden ${
           isSafari ? "" : "bg-fixed"
         } bg-center bg-cover bg-[url('https://static.vecteezy.com/system/resources/previews/011/449/273/non_2x/70s-retro-perspective-lines-background-vintage-colourful-stripes-banner-backdrop-and-wallpaper-vector.jpg')]`}
       >

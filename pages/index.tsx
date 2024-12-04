@@ -22,12 +22,12 @@ export default function IndexPage() {
     <>
       <Register />
       <Goals isSafari={isSafari} />
-      <Price />
       <Gallery />
       <About />
       <Program />
       <Users isSafari={isSafari} />
       <Why />
+      <Price />
       {/* <Map /> */}
       <FAQ />
     </>

@@ -4,14 +4,15 @@ import Link from "next/link";
 export default function Program() {
   return (
     <>
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-900 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
               ЧТО В ПРОГРАММЕ
             </h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-              РАСПИСАНИЕ
+              РАСПИСАНИЕ <br />
+              (возможны изменения)
             </p>
           </div>
           <h1 className="sm:text-2xl text-lg font-medium text-center title-font text-gray-900 mb-4">
