@@ -13,7 +13,7 @@ export default function Price() {
           ></iframe>
         </div>
       </section> */}
-      <section className="flex justify-center">
+      <section className="flex justify-center sm:mb-8 mb-0">
         <Link
           href="/register"
           className="relative px-5 py-2 text-black group bg-[#BDC31D] hover:bg-[#BDC31D95] active:bg-yellow-500  mx-auto"

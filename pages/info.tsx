@@ -83,7 +83,6 @@ export default function Info() {
               https://t.me/fmlby
             </a>
           </motion.p>
-
           <Link
             className="group relative inline-block h-12 xs:w-60 bg-blueGray-900 rounded-md w-[300px]"
             href="/"

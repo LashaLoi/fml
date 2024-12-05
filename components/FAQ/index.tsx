@@ -1,7 +1,7 @@
 export default function FAQ() {
   return (
-    <section className="relative p-10 overflow-hidden border-b-2">
-      <div className="relative z-8 container px-4 mx-auto">
+    <section className="relative div-10 overflow-hidden">
+      <div className="relative z-8 container divx-4 mx-auto">
         <div className="md:max-w-4xl mx-auto">
           <div className="text-black text-center font-medium">
             Для более подробной информации вы можете связаться с регистратором:{" "}
