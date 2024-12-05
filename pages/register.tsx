@@ -219,7 +219,7 @@ export default function RegisterPage() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  +375 25 959 4482 (Наташа)
+                  +375 25 959 4482 (Наталья)
                 </a>
               </div>
               <div>

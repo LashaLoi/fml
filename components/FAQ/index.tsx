@@ -10,18 +10,18 @@ export default function FAQ() {
                  Тел:
                 <a
                   className="font-semibold text-[#BDC31D] hover:text-[#BDC31D95] ml-1"
-                  href="httdivs://t.me/nat_lishka"
+                  href="https://t.me/nat_lishka"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  +375 25 959 4482 (Наташа)
+                  +375 25 959 4482 (Наталья)
                 </a>
               </div>
               <div>
                 ТГ:
                 <a
                   className="font-semibold text-[#47A8B7] hover:text-[#47A8B795] ml-1"
-                  href="httdivs://t.me/nat_lishka"
+                  href="https://t.me/nat_lishka"
                   target="_blank"
                   rel="noreferrer"
                 >
