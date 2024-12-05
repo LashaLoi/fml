@@ -65,7 +65,7 @@ export default function Program() {
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  19.00 - вечер-хвалы, молитвы
+                  19.00 - время с Богом, молитва
                 </span>
               </div>
             </div>
