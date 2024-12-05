@@ -4,14 +4,31 @@ export default function FAQ() {
       <div className="relative z-8 container px-4 mx-auto">
         <div className="md:max-w-4xl mx-auto">
           <p className="text-black text-center font-medium">
-            <span className="mr-1">Все еще есть вопросы?</span>
-            Напиши нам
-            <a
-              className="font-semibold text-[#BDC31D] hover:text-[#BDC31D95] ml-1"
-              href="mailto: fml@ywam.by"
-            >
-              - fml@ywam.by
-            </a>
+            Для более подробной информации вы можете связаться с регистратором:{" "}
+            <div className="flex flex-col mt-2">
+              <p>
+                 Тел:
+                <a
+                  className="font-semibold text-[#BDC31D] hover:text-[#BDC31D95] ml-1"
+                  href="https://t.me/nat_lishka"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  +375 25 959 4482 (Наташа)
+                </a>
+              </p>
+              <p>
+                ТГ:
+                <a
+                  className="font-semibold text-[#47A8B7] hover:text-[#47A8B795] ml-1"
+                  href="https://t.me/nat_lishka"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  @nat_lishka
+                </a>
+              </p>
+            </div>
           </p>
         </div>
       </div>

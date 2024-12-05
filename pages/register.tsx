@@ -168,7 +168,7 @@ export default function RegisterPage() {
         />
         <Textarea
           defaultValue="..."
-          label="ДЕТИ, КОТОРЫЕ ПОЕДУ С ВАМИ НА ФМЛ (ФИО, ВОЗРАСТ)"
+          label="ДЕТИ, КОТОРЫЕ ПОЕДУТ С ВАМИ НА ФМЛ (ФИО, ВОЗРАСТ)"
           name="children"
           register={register}
           placeholder="..."
@@ -197,7 +197,46 @@ export default function RegisterPage() {
           register={register}
           placeholder="..."
         />
-        <div className="flex flex-wrap items-center justify-around -mx-4 mb-8 pb-6  border-opacity-20">
+        <div className="">
+          <div className="font-bold mb-4">
+            Добровольное пожертвование - 100 BYN*
+          </div>
+
+          <div className="mb-4">
+            <span className="text-red-300">*</span>Обращаем ваше внимание, что
+            регистрация считается окончательной после внесения пожертвования.
+            После 10.01.2025 сумма пожертвования составит 120 BYN.
+          </div>
+
+          <div className="text-black font-medium mb-8">
+            Для более подробной информации вы можете связаться с регистратором:{" "}
+            <div className="flex flex-col mt-2">
+              <div>
+                Тел:
+                <a
+                  className="font-semibold text-[#BDC31D] hover:text-[#BDC31D95] ml-1"
+                  href="https://t.me/nat_lishka"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  +375 25 959 4482 (Наташа)
+                </a>
+              </div>
+              <div>
+                ТГ:
+                <a
+                  className="font-semibold text-[#47A8B7] hover:text-[#47A8B795] ml-1"
+                  href="https://t.me/nat_lishka"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  @nat_lishka
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-wrap items-center justify-around -mx-4 mb-2 pb-6  border-opacity-20">
           <button
             type="reset"
             className="relative px-5 py-2 font-medium text-white group mr-10"

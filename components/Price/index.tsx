@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Price() {
   return (
     <>
@@ -11,14 +13,13 @@ export default function Price() {
           ></iframe>
         </div>
       </section> */}
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 pt-8 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
-              ДОБРОВОЛЬНОЕ ПОЖЕРТВОВАНИЕ - 100BYN
-            </h1>
-          </div>
-        </div>
+      <section className="flex justify-center">
+        <Link
+          href="/register"
+          className="relative px-5 py-2 text-black group bg-[#BDC31D] hover:bg-[#BDC31D95] active:bg-yellow-500  mx-auto"
+        >
+          РЕГИСТРАЦИЯ
+        </Link>
       </section>
     </>
   );
