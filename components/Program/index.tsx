@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-
 export default function Program() {
   return (
     <>
@@ -22,50 +19,84 @@ export default function Program() {
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  10:00 - регистрация, расселение
-                </span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">11.30 - 1 сессия</span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">13.30 - обед</span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">
-                  14.30 - let’s talk и семинары
+                  10.00 | Регистрация, расселение
                 </span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  16.30 - кофе-пауза
+                  11:00-13.30 | 1 сессия
                 </span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  17.00 - topic talks
+                  13:30-14:25 | Обед
                 </span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">18.00 - ужин</span>
+                <span className="title-font font-medium">
+                  14:30-14:55 | Семинар
+                </span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  19.00 - время с Богом, молитва
+                  15:05-15:35 | Интервью
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                <span className="title-font font-medium">
+                  15:35-16:00 | Семинар
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                <span className="title-font font-medium">
+                  16:10-16:40 | Кофе-пауза
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                <span className="title-font font-medium">
+                  16:45-17:10 | Семинар
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                <span className="title-font font-medium">
+                  17:10-17:20 | Рефлексия
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                <span className="title-font font-medium">
+                  17:20-17:50 | Интервью
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                <span className="title-font font-medium">
+                  18:00-18:55 | Ужин
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                <span className="title-font font-medium">
+                  19.00-21:00 | Вечер-хвалы, молитвы
                 </span>
               </div>
             </div>
@@ -77,77 +108,71 @@ export default function Program() {
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">08.00 - молитва</span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">09.00 - завтрак</span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">10.00 - 2 сессия</span>
+                <span className="title-font font-medium">08.00 | Молитва</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  11.30 - кофе-пауза
+                  09.00-09:55 | Завтрак
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                <span className="title-font font-medium">10.00 | 2 сессия</span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                <span className="title-font font-medium">
+                  11.50-12:20 | Кофе-пауза
                 </span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  12.00 - let’s talk и семинары
-                </span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">13.30 - обед</span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">
-                  13:00 - extra talk
-                </span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">13:30 - обед</span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">
-                  14.30 - topic talks
+                  12.20-12:45 | Семинар
                 </span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  15.30 - кофе-пауза
+                  12:55-13:25 | Интервью
                 </span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">16.00 - 3 сессия</span>
+                <span className="title-font font-medium">
+                  13:30-14:25 | Обед
+                </span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">18.30 - ужин</span>
+                <span className="title-font font-medium">14:30 | 3 сессия</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">19.30 - отъезд</span>
+                <span className="title-font font-medium">
+                  14:30-15:05 | Worship
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                <span className="title-font font-medium">
+                  17:00-17:55 | Ужин
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                <span className="title-font font-medium">18:00 | Отъезд</span>
               </div>
             </div>
           </div>
