@@ -76,193 +76,214 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="p-8">
-      {open && <Notification onClose={() => setOpen(false)} />}
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="flex flex-wrap items-center -mx-4 pb-8 mb-8 border-b border-gray-400 border-opacity-20">
-          <div className="w-full sm:w-1/3 px-4 mb-4 sm:mb-0">
-            <span className="text-sm font-medium text-black">
-              ФАМИЛИЯ / ИМЯ
-            </span>
-          </div>
-          <div className="w-full sm:w-2/3 px-4">
-            <div className="max-w-xl">
-              <div className="flex flex-wrap items-center -mx-3">
-                <div className="w-full sm:w-1/2 px-3 mb-3 sm:mb-0">
-                  <input
-                    required
-                    className="block py-4 px-3 w-full text-sm text-black placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-black focus:border-yellow-500 rounded-lg"
-                    placeholder="ФАМИЛИЯ"
-                    {...register("firstName")}
-                  />
-                </div>
-                <div className="w-full sm:w-1/2 px-3">
-                  <input
-                    required
-                    className="block py-4 px-3 w-full text-sm text-black placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-black focus:border-yellow-500 rounded-lg"
-                    placeholder="ИМЯ"
-                    {...register("lastName")}
-                  />
-                </div>
+    <>
+      <div className="bg-red-100/60 backdrop-blur-lg">
+        <div className="px-4 py-4 sm:px-6 lg:px-8 mx-auto">
+          <div className="grid justify-center ">
+            <div className="flex items-center gap-x-3 md:gap-x-5">
+              <div className="grow">
+                <p className="md:text-xl text-gray-800 font-semibold">
+                  Регистрация осуществляется в список ожидания. Все места
+                  предварительно исчерпаны, но все еще есть возможность попасть,
+                  если кто-то откажется или мы найдем дополнительное место для
+                  ночлега, либо возможно будет участие без предоставления
+                  ночлега.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <Select
-          options={["31 января", "1 февраля", "Оба дня"]}
-          label="ДЕНЬ"
-          defaultValue={"Оба дня"}
-          name="days"
-          required
-          register={register}
-        />
-        <Input
-          label="ГОРОД"
-          placeholder="Минск"
-          name="city"
-          required
-          register={register}
-        />
-        <Input
-          label="ЦЕРКОВЬ"
-          placeholder="НОВОЕ ПОКОЛЕНИЕ"
-          name="church"
-          required
-          register={register}
-        />
-        <Input
-          label="ФИО ПАСТОРА"
-          placeholder="ВОРОНЕНКО ЛЕОНИД ПЕТРОВИЧ"
-          name="pastor"
-          required
-          register={register}
-        />
-        <Input
-          label="ОТВЕТСТВЕННОСТЬ В ЦЕРКВИ"
-          placeholder="МОЛОДЕЖНЫЙ ЛИДЕР"
-          name="ministry"
-          required
-          register={register}
-        />
-        <Textarea
-          label="ОЖИДАНИЕ ОТ ФОРУМА"
-          placeholder="Напишите ваши ожидания"
-          register={register}
-          required
-          name="expect"
-        />
-        <Select
-          options={["ДА", "НЕТ"]}
-          label="НУЖНА ЛИ ПОМОЩЬ С ТРАНСПОРТОМ"
-          name="transfer"
-          required
-          register={register}
-        />
-        <Input
-          label="ДАТА РОЖДЕНИЯ"
-          mask="99/99/9999"
-          placeholder="14/10/1998"
-          name="age"
-          required
-          register={register}
-        />
-        <Textarea
-          defaultValue="..."
-          label="ДЕТИ, КОТОРЫЕ ПОЕДУТ С ВАМИ НА ФМЛ (ФИО, ВОЗРАСТ)"
-          name="children"
-          register={register}
-          placeholder="..."
-        />
-        <Input
-          label="ТЕЛЕФОН"
-          placeholder="+375 (29/33) 123 45 67 или 8 029 1234567"
-          pastMask
-          name="phone"
-          required
-          register={register}
-          type="tel"
-        />
-        <Input
-          label="E-MAIL"
-          placeholder="fml@gmail.com"
-          name="email"
-          required
-          register={register}
-          type="email"
-        />
-        <Textarea
-          defaultValue="..."
-          label="ЕСТЬ ВОПРОСЫ?"
-          name="q"
-          register={register}
-          placeholder="..."
-        />
-        <div className="">
-          <div className="font-bold mb-4">
-            Добровольное пожертвование - 100 BYN*
-          </div>
+      </div>
+      <div className="p-8">
+        {open && <Notification onClose={() => setOpen(false)} />}
 
-          <div className="mb-4">
-            <span className="text-red-300">*</span>Обращаем ваше внимание, что
-            регистрация считается окончательной после внесения пожертвования.
-            После 10.01.2025 сумма пожертвования составит 120 BYN.
-          </div>
-
-          <div className="text-black font-medium mb-8">
-            Для более подробной информации вы можете связаться с регистратором:{" "}
-            <div className="flex flex-col mt-2">
-              <div>
-                Тел:
-                <a
-                  className="font-semibold text-[#BDC31D] hover:text-[#BDC31D95] ml-1"
-                  href="https://t.me/nat_lishka"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  +375 25 959 4482 (Наталья)
-                </a>
-              </div>
-              <div>
-                ТГ:
-                <a
-                  className="font-semibold text-[#47A8B7] hover:text-[#47A8B795] ml-1"
-                  href="https://t.me/nat_lishka"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  @nat_lishka
-                </a>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <div className="flex flex-wrap items-center -mx-4 pb-8 mb-8 border-b border-gray-400 border-opacity-20">
+            <div className="w-full sm:w-1/3 px-4 mb-4 sm:mb-0">
+              <span className="text-sm font-medium text-black">
+                ФАМИЛИЯ / ИМЯ
+              </span>
+            </div>
+            <div className="w-full sm:w-2/3 px-4">
+              <div className="max-w-xl">
+                <div className="flex flex-wrap items-center -mx-3">
+                  <div className="w-full sm:w-1/2 px-3 mb-3 sm:mb-0">
+                    <input
+                      required
+                      className="block py-4 px-3 w-full text-sm text-black placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-black focus:border-yellow-500 rounded-lg"
+                      placeholder="ФАМИЛИЯ"
+                      {...register("firstName")}
+                    />
+                  </div>
+                  <div className="w-full sm:w-1/2 px-3">
+                    <input
+                      required
+                      className="block py-4 px-3 w-full text-sm text-black placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-black focus:border-yellow-500 rounded-lg"
+                      placeholder="ИМЯ"
+                      {...register("lastName")}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex flex-wrap items-center justify-around -mx-4 mb-2 pb-6  border-opacity-20">
-          <button
-            type="reset"
-            className="relative px-5 py-2 font-medium text-white group mr-10"
-          >
-            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-gray-500 group-hover:bg-gray-700 group-hover:skew-x-12"></span>
-            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-gray-700 group-hover:bg-gray-500 group-hover:-skew-x-12"></span>
-            <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-gray-600 -rotate-12"></span>
-            <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-gray-400 -rotate-12"></span>
-            <span className="relative">СБРОСИТЬ</span>
-          </button>
+          <Select
+            options={["31 января", "1 февраля", "Оба дня"]}
+            label="ДЕНЬ"
+            defaultValue={"Оба дня"}
+            name="days"
+            required
+            register={register}
+          />
+          <Input
+            label="ГОРОД"
+            placeholder="Минск"
+            name="city"
+            required
+            register={register}
+          />
+          <Input
+            label="ЦЕРКОВЬ"
+            placeholder="НОВОЕ ПОКОЛЕНИЕ"
+            name="church"
+            required
+            register={register}
+          />
+          <Input
+            label="ФИО ПАСТОРА"
+            placeholder="ВОРОНЕНКО ЛЕОНИД ПЕТРОВИЧ"
+            name="pastor"
+            required
+            register={register}
+          />
+          <Input
+            label="ОТВЕТСТВЕННОСТЬ В ЦЕРКВИ"
+            placeholder="МОЛОДЕЖНЫЙ ЛИДЕР"
+            name="ministry"
+            required
+            register={register}
+          />
+          <Textarea
+            label="ОЖИДАНИЕ ОТ ФОРУМА"
+            placeholder="Напишите ваши ожидания"
+            register={register}
+            required
+            name="expect"
+          />
+          <Select
+            options={["ДА", "НЕТ"]}
+            label="НУЖНА ЛИ ПОМОЩЬ С ТРАНСПОРТОМ"
+            name="transfer"
+            required
+            register={register}
+          />
+          <Input
+            label="ДАТА РОЖДЕНИЯ"
+            mask="99/99/9999"
+            placeholder="14/10/1998"
+            name="age"
+            required
+            register={register}
+          />
+          <Textarea
+            defaultValue="..."
+            label="ДЕТИ, КОТОРЫЕ ПОЕДУТ С ВАМИ НА ФМЛ (ФИО, ВОЗРАСТ)"
+            name="children"
+            register={register}
+            placeholder="..."
+          />
+          <Input
+            label="ТЕЛЕФОН"
+            placeholder="+375 (29/33) 123 45 67 или 8 029 1234567"
+            pastMask
+            name="phone"
+            required
+            register={register}
+            type="tel"
+          />
+          <Input
+            label="E-MAIL"
+            placeholder="fml@gmail.com"
+            name="email"
+            required
+            register={register}
+            type="email"
+          />
+          <Textarea
+            defaultValue="..."
+            label="ЕСТЬ ВОПРОСЫ?"
+            name="q"
+            register={register}
+            placeholder="..."
+          />
+          <div className="">
+            <div className="font-bold mb-4">
+              Добровольное пожертвование - 100 BYN*
+            </div>
 
-          <button
-            disabled={loading}
-            type="submit"
-            className="relative px-5 py-2 font-medium text-white group"
-          >
-            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-[#47A8B7] group-hover:bg-[#47A8B7] group-hover:skew-x-12"></span>
-            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-[#47A8B790] group-hover:bg-[#47A8B7] group-hover:-skew-x-12"></span>
-            <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-[#47A8B795] -rotate-12"></span>
-            <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-[#47A8B795] -rotate-12"></span>
-            <span className="relative">
-              {loading ? "ОТПРАВКА..." : "ОТПРАВИТЬ"}
-            </span>
-          </button>
-        </div>
-      </form>
-    </div>
+            <div className="mb-4">
+              <span className="text-red-300">*</span>Обращаем ваше внимание, что
+              регистрация считается окончательной после внесения пожертвования.
+              После 15.01.2025 сумма пожертвования составит 120 BYN.
+            </div>
+
+            <div className="text-black font-medium mb-8">
+              Для более подробной информации вы можете связаться с
+              регистратором:{" "}
+              <div className="flex flex-col mt-2">
+                <div>
+                  Тел:
+                  <a
+                    className="font-semibold text-[#BDC31D] hover:text-[#BDC31D95] ml-1"
+                    href="https://t.me/nat_lishka"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    +375 25 959 4482 (Наталья)
+                  </a>
+                </div>
+                <div>
+                  ТГ:
+                  <a
+                    className="font-semibold text-[#47A8B7] hover:text-[#47A8B795] ml-1"
+                    href="https://t.me/nat_lishka"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    @nat_lishka
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-wrap items-center justify-around -mx-4 mb-2 pb-6  border-opacity-20">
+            <button
+              type="reset"
+              className="relative px-5 py-2 font-medium text-white group mr-10"
+            >
+              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-gray-500 group-hover:bg-gray-700 group-hover:skew-x-12"></span>
+              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-gray-700 group-hover:bg-gray-500 group-hover:-skew-x-12"></span>
+              <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-gray-600 -rotate-12"></span>
+              <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-gray-400 -rotate-12"></span>
+              <span className="relative">СБРОСИТЬ</span>
+            </button>
+
+            <button
+              disabled={loading}
+              type="submit"
+              className="relative px-5 py-2 font-medium text-white group"
+            >
+              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-[#47A8B7] group-hover:bg-[#47A8B7] group-hover:skew-x-12"></span>
+              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-[#47A8B790] group-hover:bg-[#47A8B7] group-hover:-skew-x-12"></span>
+              <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-[#47A8B795] -rotate-12"></span>
+              <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-[#47A8B795] -rotate-12"></span>
+              <span className="relative">
+                {loading ? "ОТПРАВКА..." : "ОТПРАВИТЬ"}
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </>
   );
 }
