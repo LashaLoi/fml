@@ -19,14 +19,14 @@ export default function Program() {
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  10.00 | Регистрация, расселение
+                  10:00 | Регистрация, расселение
                 </span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  11:00-13.30 | 1 сессия
+                  11:00-13:30 | 1 сессия
                 </span>
               </div>
             </div>
@@ -40,7 +40,7 @@ export default function Program() {
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  14:30-14:55 | Семинар
+                  14:30-15:05 | Семинар
                 </span>
               </div>
             </div>
@@ -54,35 +54,21 @@ export default function Program() {
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  15:35-16:00 | Семинар
+                  15:35-16:10 | Семинар
                 </span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  16:10-16:40 | Кофе-пауза
+                  16:10-17:10 | Семинар
                 </span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  16:45-17:10 | Семинар
-                </span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">
-                  17:10-17:20 | Рефлексия
-                </span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">
-                  17:20-17:50 | Интервью
+                  17:10-17:50 | Интервью
                 </span>
               </div>
             </div>
@@ -96,7 +82,7 @@ export default function Program() {
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  19.00-21:00 | Вечер-хвалы, молитвы
+                  19:00-21:00 | Вечер-хвалы, молитвы
                 </span>
               </div>
             </div>
@@ -108,32 +94,34 @@ export default function Program() {
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">08.00 | Молитва</span>
+                <span className="title-font font-medium">08:00 | Молитва</span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  09.00-09:55 | Завтрак
-                </span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">10.00 | 2 сессия</span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">
-                  11.50-12:20 | Кофе-пауза
+                  09:00-09:55 | Завтрак
                 </span>
               </div>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  12.20-12:45 | Семинар
+                  10:00-11:50 | 2 сессия
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                <span className="title-font font-medium">
+                  11:50-12:20 | Кофе-пауза
+                </span>
+              </div>
+            </div>
+            <div className="p-2 sm:w-1/2 w-full">
+              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                <span className="title-font font-medium">
+                  12:20-12:55 | Семинар
                 </span>
               </div>
             </div>
@@ -153,13 +141,8 @@ export default function Program() {
             </div>
             <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <span className="title-font font-medium">14:30 | 3 сессия</span>
-              </div>
-            </div>
-            <div className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium">
-                  14:30-15:05 | Worship
+                  14:30-16:55 | 3 сессия
                 </span>
               </div>
             </div>
