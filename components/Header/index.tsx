@@ -11,12 +11,12 @@ export default function Header() {
           ФМЛ
         </span>
       </Link>
-      <Link
+      {/* <Link
         href="/register"
         className="relative px-5 py-2 text-black group bg-[#BDC31D] hover:bg-[#BDC31D95] active:bg-yellow-500 flex gap-4 justify-between"
       >
         РЕГИСТРАЦИЯ
-      </Link>
+      </Link> */}
     </nav>
   );
 }
