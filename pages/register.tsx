@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import Input from "../components/Input";
+import ElectricBorder from "@/components/components/ElectricBorder";
 
 const Notification = ({ onClose }: { onClose: () => void }) => (
   <div className="z-50 fixed right-0 bottom-0 p-4">
@@ -54,7 +55,7 @@ export default function RegisterPage() {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbyLRYrutl1a0AmoExYINW_u0dO8MxZMBoFfXRmehTbDr1oleYpfnJFeBVVxMUZ7N2Pb/exec",
+        "https://script.google.com/macros/s/AKfycbwaO4iJzFhXQDDPzW0du8s25nYEEc7Tu_dyisW1yN0m6KdLx3WMn8UB0uS11fZVBCx_/exec",
         {
           redirect: "follow",
           method: "POST",
@@ -77,7 +78,7 @@ export default function RegisterPage() {
 
   return (
     <>
-      <div className="bg-red-100/60 backdrop-blur-lg">
+      {/* <div className="bg-red-100/60 backdrop-blur-lg">
         <div className="px-4 py-4 sm:px-6 lg:px-8 mx-auto">
           <div className="grid justify-center ">
             <div className="flex items-center gap-x-3 md:gap-x-5">
@@ -93,7 +94,7 @@ export default function RegisterPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="p-8">
         {open && <Notification onClose={() => setOpen(false)} />}
 
@@ -108,20 +109,36 @@ export default function RegisterPage() {
               <div className="max-w-xl">
                 <div className="flex flex-wrap items-center -mx-3">
                   <div className="w-full sm:w-1/2 px-3 mb-3 sm:mb-0">
-                    <input
-                      required
-                      className="block py-4 px-3 w-full text-sm text-black placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-black focus:border-yellow-500 rounded-lg"
-                      placeholder="ФАМИЛИЯ"
-                      {...register("firstName")}
-                    />
+                    <ElectricBorder
+                      color="#7df9ff"
+                      speed={1}
+                      chaos={0.5}
+                      thickness={2}
+                      style={{ borderRadius: 16 }}
+                    >
+                      <input
+                        required
+                        className="block py-4 px-3 w-full text-sm text-black placeholder-gray-500 font-medium outline-none bg-transparent border-gray-400 hover:border-black focus:border-yellow-500 rounded-lg"
+                        placeholder="ФАМИЛИЯ"
+                        {...register("firstName")}
+                      />
+                    </ElectricBorder>
                   </div>
                   <div className="w-full sm:w-1/2 px-3">
-                    <input
-                      required
-                      className="block py-4 px-3 w-full text-sm text-black placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-black focus:border-yellow-500 rounded-lg"
-                      placeholder="ИМЯ"
-                      {...register("lastName")}
-                    />
+                    <ElectricBorder
+                      color="#7df9ff"
+                      speed={1}
+                      chaos={0.5}
+                      thickness={2}
+                      style={{ borderRadius: 16 }}
+                    >
+                      <input
+                        required
+                        className="block py-4 px-3 w-full text-sm text-black placeholder-gray-500 font-medium outline-none bg-transparent border-gray-400 hover:border-black focus:border-yellow-500 rounded-lg"
+                        placeholder="ИМЯ"
+                        {...register("lastName")}
+                      />
+                    </ElectricBorder>
                   </div>
                 </div>
               </div>
@@ -273,10 +290,10 @@ export default function RegisterPage() {
               type="submit"
               className="relative px-5 py-2 font-medium text-white group"
             >
-              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-[#47A8B7] group-hover:bg-[#47A8B7] group-hover:skew-x-12"></span>
-              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-[#47A8B790] group-hover:bg-[#47A8B7] group-hover:-skew-x-12"></span>
-              <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-[#47A8B795] -rotate-12"></span>
-              <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-[#47A8B795] -rotate-12"></span>
+              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-[#000000] group-hover:bg-[#000000] group-hover:skew-x-12"></span>
+              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-[#00000090] group-hover:bg-[#000000] group-hover:-skew-x-12"></span>
+              <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-[#00000095] -rotate-12"></span>
+              <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-[#00000095] -rotate-12"></span>
               <span className="relative">
                 {loading ? "ОТПРАВКА..." : "ОТПРАВИТЬ"}
               </span>

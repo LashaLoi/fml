@@ -1,3 +1,5 @@
+import DecryptedText from "@/components/components/DecryptedText";
+import ElectricBorder from "@/components/components/ElectricBorder";
 import { TextareaHTMLAttributes } from "react";
 import { UseFormRegister } from "react-hook-form";
 
@@ -23,13 +25,21 @@ export default function Textarea({
       </div>
       <div className="w-full sm:w-2/3 px-4">
         <div className="max-w-xl">
-          <textarea
-            placeholder={placeholder}
-            className="block h-56 py-4 px-3 w-full text-sm text-black placeholder-gray-500 font-medium outline-none bg-transparent border border-gray-400 hover:border-black focus:border-yellow-500 rounded-lg resize-none"
-            required={required}
-            defaultValue={defaultValue}
-            {...register(name)}
-          />
+          <ElectricBorder
+            color="#7df9ff"
+            speed={1}
+            chaos={0.5}
+            thickness={2}
+            style={{ borderRadius: 16 }}
+          >
+            <textarea
+              placeholder={placeholder}
+              className="block h-56 py-4 px-3 w-full text-sm text-black placeholder-gray-500 font-medium outline-none bg-transparent  border-gray-400 hover:border-black focus:border-yellow-500 rounded-lg resize-none"
+              required={required}
+              defaultValue={defaultValue}
+              {...register(name)}
+            />
+          </ElectricBorder>
         </div>
       </div>
     </div>
