@@ -50,7 +50,6 @@ export default function RegisterPage() {
 
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [telegramData, setTelegramData] = useState<any>(null);
 
   // Try to get Telegram launch params
   let launchParams = null;
@@ -74,7 +73,7 @@ export default function RegisterPage() {
           },
           body: JSON.stringify({
             ...result,
-            username: launchParams?.username ?? "-",
+            username: launchParams?.tgWebAppData?.user?.username ?? "-",
           }),
         }
       );
@@ -125,8 +124,6 @@ export default function RegisterPage() {
         </div>
       </div>
       <div className="p-8">
-        {JSON.stringify({ launchParams })}
-
         {open && <Notification onClose={() => setOpen(false)} />}
 
         <form onSubmit={handleSubmit(onSubmit)}>
