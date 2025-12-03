@@ -87,9 +87,9 @@ export default function RegisterPage() {
       window.Telegram.WebApp.ready();
       // @ts-ignore
       window.Telegram.WebApp.expand();
-      // @ts-ignore
 
       setTimeout(() => {
+        // @ts-ignore
         const user = window.Telegram.WebApp.initDataUnsafe.user;
         alert(user);
       }, 2000);
