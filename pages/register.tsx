@@ -78,23 +78,47 @@ export default function RegisterPage() {
 
   return (
     <>
-      {/* <div className="bg-red-100/60 backdrop-blur-lg">
-        <div className="px-4 py-4 sm:px-6 lg:px-8 mx-auto">
-          <div className="grid justify-center ">
-            <div className="flex items-center gap-x-3 md:gap-x-5">
-              <div className="grow">
-                <p className="md:text-xl text-gray-800 font-semibold">
-                  Регистрация осуществляется в список ожидания. Все места
-                  предварительно исчерпаны, но все еще есть возможность попасть,
-                  если кто-то откажется или мы найдем дополнительное место для
-                  ночлега, либо возможно будет участие без предоставления
-                  ночлега.
-                </p>
+      <div className="bg-gradient-to-r backdrop-blur-sm border-b-2 border-[#47A8B7]">
+        <div className="px-4 py-6 sm:px-6 lg:px-8 mx-auto max-w-5xl">
+          <div className="grid gap-4">
+            <div className="grid md:grid-cols-2 gap-4 text-gray-800">
+              <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg border border-[#47A8B7]/30">
+                <h3 className="font-bold text-lg mb-2 text-[#47A8B7]">
+                  📅 Даты и место
+                </h3>
+                <p className="font-medium">6 - 7 февраля 2026</p>
               </div>
+
+              <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg border border-[#BDC31D]/30">
+                <h3 className="font-bold text-lg mb-2 text-[#BDC31D]">
+                  💰 Пожертвование
+                </h3>
+                <p className="font-medium">80 BYN (до 15.01.2026)</p>
+                <p className="text-sm mt-1">100 BYN (после 15.01.2026)</p>
+              </div>
+            </div>
+
+            <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg border border-gray-400">
+              <p className="md:text-base text-gray-700">
+                <span className="font-semibold">Внимание:</span> В этом году
+                изменился формат расселения. К сожалению, мы не сможем
+                организовать проживание в месте проведения мероприятия.
+                Расселение осуществляется участниками самостоятельно. В
+                ближайшее время мы направим список проверенных вариантов
+                проживания с приятными ценами.
+              </p>
+            </div>
+
+            <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg border border-red-300">
+              <p className="md:text-base text-gray-700">
+                <span className="font-semibold">Внимание:</span> Регистрация
+                считается окончательной после внесения добровольного
+                пожертвования
+              </p>
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="p-8">
         {open && <Notification onClose={() => setOpen(false)} />}
 
@@ -181,19 +205,19 @@ export default function RegisterPage() {
             register={register}
           />
           <Textarea
-            label="ОЖИДАНИЕ ОТ ФОРУМА"
+            label="ОЖИДАНИЯ ОТ ФОРУМА"
             placeholder="Напишите ваши ожидания"
             register={register}
             required
             name="expect"
           />
-          <Select
+          {/* <Select
             options={["ДА", "НЕТ"]}
             label="НУЖНА ЛИ ПОМОЩЬ С ТРАНСПОРТОМ"
             name="transfer"
             required
             register={register}
-          />
+          /> */}
           <Input
             label="ДАТА РОЖДЕНИЯ"
             mask="99/99/9999"
@@ -203,7 +227,6 @@ export default function RegisterPage() {
             register={register}
           />
           <Textarea
-            defaultValue="..."
             label="ДЕТИ, КОТОРЫЕ ПОЕДУТ С ВАМИ НА ФМЛ (ФИО, ВОЗРАСТ)"
             name="children"
             register={register}
