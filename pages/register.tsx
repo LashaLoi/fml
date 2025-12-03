@@ -2,7 +2,7 @@ import Select from "components/Select";
 import Textarea from "components/Textarea";
 
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import Input from "../components/Input";
 import ElectricBorder from "@/components/components/ElectricBorder";
@@ -75,6 +75,23 @@ export default function RegisterPage() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    // @ts-ignore
+    if (window.Telegram && window.Telegram.WebApp) {
+      // The Telegram WebApp object is available
+      // @ts-ignore
+      window.Telegram.WebApp.ready();
+      // @ts-ignore
+      window.Telegram.WebApp.expand();
+      // @ts-ignore
+      const user = window.Telegram.WebApp.initDataUnsafe.user;
+      alert(user);
+    } else {
+      // Not running inside a Telegram Mini App or SDK not loaded
+      alert("Telegram WebApp object not found.");
+    }
+  }, []);
 
   return (
     <>
@@ -161,7 +178,7 @@ export default function RegisterPage() {
             </div>
           </div>
           <Select
-            options={["31 января", "1 февраля", "Оба дня"]}
+            options={["1 день", "2 день", "Оба дня"]}
             label="ДЕНЬ"
             defaultValue={"Оба дня"}
             name="days"
@@ -248,16 +265,6 @@ export default function RegisterPage() {
             placeholder="..."
           />
           <div className="">
-            <div className="font-bold mb-4">
-              Добровольное пожертвование - 100 BYN*
-            </div>
-
-            <div className="mb-4">
-              <span className="text-red-300">*</span>Обращаем ваше внимание, что
-              регистрация считается окончательной после внесения пожертвования.
-              После 15.01.2025 сумма пожертвования составит 120 BYN.
-            </div>
-
             <div className="text-black font-medium mb-8">
               Для более подробной информации вы можете связаться с
               регистратором:{" "}
