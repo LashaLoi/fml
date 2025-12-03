@@ -93,7 +93,8 @@ export default function RegisterPage() {
           },
           body: JSON.stringify({
             ...result,
-            username: telegramData?.username ?? "-",
+            // @ts-ignore
+            username: window.Telegram.WebApp ?? "-",
           }),
         }
       );
