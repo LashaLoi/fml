@@ -80,23 +80,11 @@ export default function RegisterPage() {
   useEffect(() => {
     init();
 
-    // @ts-ignore
-    if (window.Telegram && window.Telegram.WebApp) {
-      // The Telegram WebApp object is available
+    setTimeout(() => {
       // @ts-ignore
-      window.Telegram.WebApp.ready();
-      // @ts-ignore
-      window.Telegram.WebApp.expand();
-
-      setTimeout(() => {
-        // @ts-ignore
-        const user = window.Telegram.WebApp.initDataUnsafe.user;
-        alert(user);
-      }, 2000);
-    } else {
-      // Not running inside a Telegram Mini App or SDK not loaded
-      alert("Telegram WebApp object not found.");
-    }
+      const user = window.Telegram.WebApp.initDataUnsafe.user;
+      alert(user);
+    }, 2000);
   }, []);
 
   return (
