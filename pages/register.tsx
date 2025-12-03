@@ -78,7 +78,7 @@ export default function RegisterPage() {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbwaO4iJzFhXQDDPzW0du8s25nYEEc7Tu_dyisW1yN0m6KdLx3WMn8UB0uS11fZVBCx_/exec",
+        "https://script.google.com/macros/s/AKfycbx2AT0LPYkH6wt8jbluddJ-w_aKM2JFGWT5lCgzWmrlFe24JQS-5-xJ76aVJN5S24EY/exec",
         {
           redirect: "follow",
           method: "POST",
