@@ -2,8 +2,9 @@ import Select from "components/Select";
 import Textarea from "components/Textarea";
 
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
+import { useLaunchParams } from "@telegram-apps/sdk-react";
 import Input from "../components/Input";
 import ElectricBorder from "@/components/components/ElectricBorder";
 
@@ -49,6 +50,28 @@ export default function RegisterPage() {
 
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [telegramData, setTelegramData] = useState<any>(null);
+
+  // Try to get Telegram launch params
+  let launchParams = null;
+  try {
+    launchParams = useLaunchParams();
+  } catch (error) {
+    // Not running in Telegram, ignore
+  }
+
+  // Extract Telegram user data if available
+  useEffect(() => {
+    if (launchParams?.initData) {
+      const initData = launchParams.initData as any;
+
+      if (initData.user) {
+        setTelegramData({
+          username: initData.user.username,
+        });
+      }
+    }
+  }, [launchParams]);
 
   const onSubmit = async (result: any) => {
     setLoading(true);
@@ -62,7 +85,7 @@ export default function RegisterPage() {
           headers: {
             "Content-Type": "text/plain;charset=utf-8",
           },
-          body: JSON.stringify(result),
+          body: JSON.stringify({ ...result, username: telegramData.username }),
         }
       );
 
@@ -75,14 +98,6 @@ export default function RegisterPage() {
       setLoading(false);
     }
   };
-
-  useEffect(() => {
-    setTimeout(() => {
-      // @ts-ignore
-      const user = window.Telegram.WebApp.initDataUnsafe.user;
-      alert(user);
-    }, 10000);
-  }, []);
 
   return (
     <>
