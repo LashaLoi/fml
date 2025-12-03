@@ -60,25 +60,6 @@ export default function RegisterPage() {
     // Not running in Telegram, ignore
   }
 
-  // Extract Telegram user data if available
-  useEffect(() => {
-    try {
-      init();
-    } catch (error) {
-      // Not running in Telegram, ignore
-    }
-
-    if (launchParams?.initData) {
-      const initData = launchParams.initData as any;
-
-      if (initData.user) {
-        setTelegramData({
-          username: initData.user.username,
-        });
-      }
-    }
-  }, [launchParams]);
-
   const onSubmit = async (result: any) => {
     setLoading(true);
 
@@ -93,7 +74,7 @@ export default function RegisterPage() {
           },
           body: JSON.stringify({
             ...result,
-            username: telegramData?.username ?? "-",
+            username: launchParams?.username ?? "-",
           }),
         }
       );
