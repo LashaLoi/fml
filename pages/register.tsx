@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import Input from "../components/Input";
 import ElectricBorder from "@/components/components/ElectricBorder";
+import { init } from "@telegram-apps/sdk-react";
 
 const Notification = ({ onClose }: { onClose: () => void }) => (
   <div className="z-50 fixed right-0 bottom-0 p-4">
@@ -77,6 +78,8 @@ export default function RegisterPage() {
   };
 
   useEffect(() => {
+    init();
+
     // @ts-ignore
     if (window.Telegram && window.Telegram.WebApp) {
       // The Telegram WebApp object is available

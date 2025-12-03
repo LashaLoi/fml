@@ -312,7 +312,7 @@
 
 "@telegram-apps/sdk-react@^3.3.9":
   version "3.3.9"
-  resolved "https://registry.npmjs.org/@telegram-apps/sdk-react/-/sdk-react-3.3.9.tgz"
+  resolved "https://registry.yarnpkg.com/@telegram-apps/sdk-react/-/sdk-react-3.3.9.tgz#60a5a5e76b466221e2d6265a021aa9637c6ab054"
   integrity sha512-85jF1ICT8sYCNzXu19SqJrfrS8XslsvV14KUcToiyL7H5ZMXHt0JQKM+QJgULjnLjEswweQ4/7Bd7mNULf/BIg==
   dependencies:
     "@telegram-apps/sdk" "^3.11.8"
