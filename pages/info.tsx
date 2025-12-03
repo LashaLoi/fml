@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Info() {
   return (
-    <section className="py-24 sm:mb-[140px] mb-0">
+    <section className="py-10 sm:mb-[140px] mb-0">
       <div className="container px-4 mx-auto">
         <div className="mx-auto text-center">
           <motion.span
