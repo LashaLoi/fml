@@ -56,8 +56,14 @@ export default function Info() {
             }}
             className="text-2xl font-black mb-5"
           >
-            Благодарим вас за регистрацию
+            Благодарим вас!
           </motion.h3>
+          <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg border border-red-300 mb-4 max-w-[600px] mx-auto">
+            <p className="md:text-base text-gray-700">
+              <span className="font-semibold">Внимание:</span> Регистрация
+              считается окончательной после внесения добровольного пожертвования
+            </p>
+          </div>
           <motion.p
             initial={{
               opacity: 0,

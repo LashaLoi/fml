@@ -108,14 +108,6 @@ export default function RegisterPage() {
                 проживания с приятными ценами.
               </p>
             </div>
-
-            <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg border border-red-300">
-              <p className="md:text-base text-gray-700">
-                <span className="font-semibold">Внимание:</span> Регистрация
-                считается окончательной после внесения добровольного
-                пожертвования
-              </p>
-            </div>
           </div>
         </div>
       </div>
@@ -241,16 +233,15 @@ export default function RegisterPage() {
             register={register}
             type="tel"
           />
-          <Input
+          {/* <Input
             label="E-MAIL"
             placeholder="fml@gmail.com"
             name="email"
             required
             register={register}
             type="email"
-          />
+          /> */}
           <Textarea
-            defaultValue="..."
             label="ЕСТЬ ВОПРОСЫ?"
             name="q"
             register={register}
