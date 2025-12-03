@@ -88,8 +88,11 @@ export default function RegisterPage() {
       // @ts-ignore
       window.Telegram.WebApp.expand();
       // @ts-ignore
-      const user = window.Telegram.WebApp.initDataUnsafe.user;
-      alert(user);
+
+      setTimeout(() => {
+        const user = window.Telegram.WebApp.initDataUnsafe.user;
+        alert(user);
+      }, 2000);
     } else {
       // Not running inside a Telegram Mini App or SDK not loaded
       alert("Telegram WebApp object not found.");
