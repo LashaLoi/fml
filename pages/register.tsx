@@ -84,7 +84,7 @@ export default function RegisterPage() {
       // @ts-ignore
       const user = window.Telegram.WebApp.initDataUnsafe.user;
       alert(user);
-    }, 2000);
+    }, 10000);
   }, []);
 
   return (
