@@ -4,7 +4,7 @@ import Textarea from "components/Textarea";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { useLaunchParams } from "@telegram-apps/sdk-react";
+import { init, useLaunchParams } from "@telegram-apps/sdk-react";
 import Input from "../components/Input";
 import ElectricBorder from "@/components/components/ElectricBorder";
 
@@ -62,6 +62,12 @@ export default function RegisterPage() {
 
   // Extract Telegram user data if available
   useEffect(() => {
+    try {
+      init();
+    } catch (error) {
+      // Not running in Telegram, ignore
+    }
+
     if (launchParams?.initData) {
       const initData = launchParams.initData as any;
 
@@ -78,14 +84,17 @@ export default function RegisterPage() {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbx2AT0LPYkH6wt8jbluddJ-w_aKM2JFGWT5lCgzWmrlFe24JQS-5-xJ76aVJN5S24EY/exec",
+        "https://script.google.com/macros/s/AKfycbwuLj190sGHW5CMPyDKRQt_rf36lzYYQ6RhTJLrPvotn3PVmRzLTrt8NBVbqcJRL_oE/exec",
         {
           redirect: "follow",
           method: "POST",
           headers: {
             "Content-Type": "text/plain;charset=utf-8",
           },
-          body: JSON.stringify({ ...result, username: telegramData.username }),
+          body: JSON.stringify({
+            ...result,
+            username: telegramData?.username ?? "-",
+          }),
         }
       );
 
