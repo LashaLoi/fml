@@ -144,6 +144,8 @@ export default function RegisterPage() {
         </div>
       </div>
       <div className="p-8">
+        {JSON.stringify({ launchParams })}
+
         {open && <Notification onClose={() => setOpen(false)} />}
 
         <form onSubmit={handleSubmit(onSubmit)}>
