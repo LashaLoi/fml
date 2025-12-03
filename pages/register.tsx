@@ -212,7 +212,6 @@ export default function RegisterPage() {
             label="ОЖИДАНИЯ ОТ ФОРУМА"
             placeholder="Напишите ваши ожидания"
             register={register}
-            required
             name="expect"
           />
           {/* <Select
