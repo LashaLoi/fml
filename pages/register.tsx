@@ -64,7 +64,7 @@ export default function RegisterPage() {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbwuLj190sGHW5CMPyDKRQt_rf36lzYYQ6RhTJLrPvotn3PVmRzLTrt8NBVbqcJRL_oE/exec",
+        "https://script.google.com/macros/s/AKfycbz51BI3r7kt1KzQ3Kc09JttHbhXYfuq0yNx9xxXoTO9Mz4oJL0zw5Mz49i5y5XlVeJO/exec",
         {
           redirect: "follow",
           method: "POST",
@@ -105,8 +105,8 @@ export default function RegisterPage() {
                 <h3 className="font-bold text-lg mb-2 text-[#BDC31D]">
                   💰 Пожертвование
                 </h3>
-                <p className="font-medium">80 BYN (до 15.01.2026)</p>
-                <p className="text-sm mt-1">100 BYN (после 15.01.2026)</p>
+                <p className="font-medium">30 BYN (до 15.01.2026)</p>
+                <p className="text-sm mt-1">40 BYN (после 15.01.2026)</p>
               </div>
             </div>
 
@@ -115,9 +115,7 @@ export default function RegisterPage() {
                 <span className="font-semibold">Внимание:</span> В этом году
                 изменился формат расселения. К сожалению, мы не сможем
                 организовать проживание в месте проведения мероприятия.
-                Расселение осуществляется участниками самостоятельно. В
-                ближайшее время мы направим список проверенных вариантов
-                проживания с приятными ценами.
+                Расселение осуществляется участниками самостоятельно.
               </p>
             </div>
           </div>
@@ -172,14 +170,14 @@ export default function RegisterPage() {
               </div>
             </div>
           </div>
-          <Select
+          {/* <Select
             options={["1 день", "2 день", "Оба дня"]}
             label="ДЕНЬ"
             defaultValue={"Оба дня"}
             name="days"
             required
             register={register}
-          />
+          /> */}
           <Input
             label="ГОРОД"
             placeholder="Минск"
