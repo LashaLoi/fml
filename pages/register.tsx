@@ -98,7 +98,7 @@ export default function RegisterPage() {
                 <h3 className="font-bold text-lg mb-2 text-[#47A8B7]">
                   📅 Даты и место
                 </h3>
-                <p className="font-medium">6 - 7 февраля 2026</p>
+                <p className="font-medium">7 февраля 2026</p>
               </div>
 
               <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg border border-[#BDC31D]/30">
