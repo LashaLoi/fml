@@ -109,15 +109,6 @@ export default function RegisterPage() {
                 <p className="text-sm mt-1">40 BYN (после 15.01.2026)</p>
               </div>
             </div>
-
-            <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg border border-gray-400">
-              <p className="md:text-base text-gray-700">
-                <span className="font-semibold">Внимание:</span> В этом году
-                изменился формат расселения. К сожалению, мы не сможем
-                организовать проживание в месте проведения мероприятия.
-                Расселение осуществляется участниками самостоятельно.
-              </p>
-            </div>
           </div>
         </div>
       </div>
