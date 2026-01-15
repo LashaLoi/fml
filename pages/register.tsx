@@ -64,7 +64,7 @@ export default function RegisterPage() {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbz51BI3r7kt1KzQ3Kc09JttHbhXYfuq0yNx9xxXoTO9Mz4oJL0zw5Mz49i5y5XlVeJO/exec",
+        "https://script.google.com/macros/s/AKfycbwjIyDxJdNbq2YqbZFGeOMX8zBzSj3dl_9OudTj7gOzeC8rlkYTTKASO_eUJigjBYB7/exec",
         {
           redirect: "follow",
           method: "POST",
@@ -161,14 +161,7 @@ export default function RegisterPage() {
               </div>
             </div>
           </div>
-          {/* <Select
-            options={["1 день", "2 день", "Оба дня"]}
-            label="ДЕНЬ"
-            defaultValue={"Оба дня"}
-            name="days"
-            required
-            register={register}
-          /> */}
+
           <Input
             label="ГОРОД"
             placeholder="Минск"
@@ -194,6 +187,14 @@ export default function RegisterPage() {
             label="ОТВЕТСТВЕННОСТЬ В ЦЕРКВИ"
             placeholder="МОЛОДЕЖНЫЙ ЛИДЕР"
             name="ministry"
+            required
+            register={register}
+          />
+          <Select
+            options={["да", "нет"]}
+            label="ЗАКАЗЫВАТЬ НА ВАС ОБЕД?"
+            defaultValue={"да"}
+            name="food"
             required
             register={register}
           />
