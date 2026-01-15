@@ -64,7 +64,7 @@ export default function RegisterPage() {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbwjIyDxJdNbq2YqbZFGeOMX8zBzSj3dl_9OudTj7gOzeC8rlkYTTKASO_eUJigjBYB7/exec",
+        "https://script.google.com/macros/s/AKfycbyUjUps1zfuxO_PL-qFTuGVzy3PaKBPTqBzARyRNq9N6tIds8CIVlCGiJ59tIsuu2HK/exec",
         {
           redirect: "follow",
           method: "POST",
@@ -190,14 +190,14 @@ export default function RegisterPage() {
             required
             register={register}
           />
-          <Select
+          {/* <Select
             options={["да", "нет"]}
             label="ЗАКАЗЫВАТЬ НА ВАС ОБЕД?"
             defaultValue={"да"}
             name="food"
             required
             register={register}
-          />
+          /> */}
           <Textarea
             label="ОЖИДАНИЯ ОТ ФОРУМА"
             placeholder="Напишите ваши ожидания"
